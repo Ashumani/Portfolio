@@ -74,6 +74,10 @@ const Contact = () => {
       >
         <p className={styles.sectionSubText}>Get in touch</p>
         <h3 className={styles.sectionHeadText}>Contact.</h3>
+        {/* <p className={styles.sectionSubText}>GitHub : https://github.com/Ashumani</p>
+        <p className={styles.sectionSubText}>LinkedIn : https://www.linkedin.com/in/manish-kirnapure/</p>
+        <p className={styles.sectionSubText}>Gmail : Manishkirnapure9@gmail.com</p>
+        <p className={styles.sectionSubText}>Mobile : +91-8793143976</p> */}
 
         <form
           ref={formRef}

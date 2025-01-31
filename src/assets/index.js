@@ -25,6 +25,10 @@ import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
+import cognizant from "./company/cognizant.svg";
+import velociter from "./company/velociter.png";
+import webquadra from "./company/webquadra.png";
+
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -56,6 +60,9 @@ export {
   shopify,
   starbucks,
   tesla,
+  cognizant,
+  velociter,
+  webquadra,
   carrent,
   jobit,
   tripguide,
