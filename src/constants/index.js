@@ -15,6 +15,11 @@ import {
   git,
   figma,
   docker,
+  python,
+  layer7,
+  java,
+  gcp,
+  apigee,
   meta,
   starbucks,
   tesla,
@@ -24,6 +29,9 @@ import {
   webquadra,
   carrent,
   jobit,
+  project1,
+  project2,
+  crm,
   tripguide,
   threejs,
 } from "../assets";
@@ -85,6 +93,32 @@ const services = [
 ];
 
 const technologies = [
+  
+  {
+    name: "Apigee",
+    icon: apigee
+  }, {
+    name: "Layer7",
+    icon: layer7
+  }, {
+    name: "Node JS",
+    icon: nodejs,
+  },
+  {
+    name: "React JS",
+    icon: reactjs,
+  },
+  {
+    name: "Python",
+    icon: python
+  },
+   {
+    name: "GCP",
+    icon: gcp
+  }, {
+    name: "Java",
+    icon: java
+  },
   {
     name: "HTML 5",
     icon: html,
@@ -98,40 +132,12 @@ const technologies = [
     icon: javascript,
   },
   {
-    name: "TypeScript",
-    icon: typescript,
-  },
-  {
-    name: "React JS",
-    icon: reactjs,
-  },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
-  {
-    name: "Node JS",
-    icon: nodejs,
-  },
-  {
     name: "MongoDB",
     icon: mongodb,
   },
   {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
     name: "git",
     icon: git,
-  },
-  {
-    name: "figma",
-    icon: figma,
   },
   {
     name: "docker",
@@ -144,7 +150,7 @@ const experiences = [
     title: "Apigee Developer",
     company_name: "Cognizant",
     icon: cognizant,
-    iconBg:  "#E6DEDD",
+    iconBg: "#E6DEDD",
     date: "January 2020 - till date",
     points: [
       "Proxy Development Expert: Proficient in developing and customizing proxies to meet specific business needs",
@@ -158,7 +164,7 @@ const experiences = [
     title: "Apigee Developer | Layer 7 Developer | Node JS Developer",
     company_name: "Velociter",
     icon: velociter,
-    iconBg:"#383E56",
+    iconBg: "#383E56",
     date: "Jun 2020 - Dec 2023",
     points: [
       "I specialize in Google Cloud Console (GCP) and Google Apigee, where I’ve developed a Publisher and Subscriber module to push and pull data and created cron jobs in Cloud Functions using Python to manage traffic delays",
@@ -225,66 +231,66 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Apigee",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Designed, developed, and migrated 1000+ proxies across various environments, including Layer 7 to Apigee Edge, Apigee Edge to Apigee Hybrid, Hybrid to DMZ, and OPDK to Hybrid.",
     tags: [
       {
-        name: "react",
+        name: "Apigee",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "Layer 7",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "JS",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
+    image: project1,
     source_code_link: "https://github.com/",
   },
   {
-    name: "Job IT",
+    name: "Automation",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "We automated report generation using the Management API, retrieving proxy analytics and sending insights via email. The process includes fetching app details, analyzing proxy bundles, and highlighting policy gaps.",
     tags: [
       {
-        name: "react",
+        name: "Java",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "Node jS",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "Python",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
+    image: project2,
     source_code_link: "https://github.com/",
   },
   {
-    name: "Trip Guide",
+    name: "Totalytics",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Totalytics is CRM , inlcude sales tracking, marketing, and attendance management. It enhances customer engagement with reliable reports, dashboards, automation, seamless collaboration.",
     tags: [
       {
-        name: "nextjs",
+        name: "React JS",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "Node JS",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "PostgreSQL",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
+    image: crm,
     source_code_link: "https://github.com/",
   },
 ];

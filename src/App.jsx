@@ -1,4 +1,5 @@
 import { BrowserRouter } from "react-router-dom";
+import AllRoutes from "./AllRoutes"
 
 import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, StarsCanvas, Blogs } from "./components";
 
@@ -21,7 +22,9 @@ const App = () => {
           <StarsCanvas />
         </div>
       </div>
+      <AllRoutes/>
     </BrowserRouter>
+    
   );
 }
 
