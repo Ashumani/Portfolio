@@ -1,0 +1,11 @@
+Model Information:
+* title:	Nación pirata independiente de Neutronia
+* source:	https://sketchfab.com/3d-models/nacion-pirata-independiente-de-neutronia-bbc89b95b4094c948c4aa4f2c34f680f
+* author:	Cristian Brevis Acevedo (https://sketchfab.com/cbrevis)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Nación pirata independiente de Neutronia" (https://sketchfab.com/3d-models/nacion-pirata-independiente-de-neutronia-bbc89b95b4094c948c4aa4f2c34f680f) by Cristian Brevis Acevedo (https://sketchfab.com/cbrevis) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

@@ -1,0 +1,8 @@
+Model Information:
+* title:	jailum
+* source:	https://sketchfab.com/3d-models/jailum-ec1a5456aaf54428a2adae42dfe057a9
+* author:	the_spaceman (https://sketchfab.com/jayvondartist)
+
+Model License:
+* license type:	SKETCHFAB Standard (https://sketchfab.com/licenses)
+* requirements:	Under basic restrictions, use worldwide, on all types of media, commercially or not, and in all types of derivative works
