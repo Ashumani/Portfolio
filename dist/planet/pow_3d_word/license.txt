@@ -1,0 +1,11 @@
+Model Information:
+* title:	Pow 3d word
+* source:	https://sketchfab.com/3d-models/pow-3d-word-6be87c6fc8de4072bc614ed803ddc120
+* author:	alihassankhn99 (https://sketchfab.com/alihassankhn99)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Pow 3d word" (https://sketchfab.com/3d-models/pow-3d-word-6be87c6fc8de4072bc614ed803ddc120) by alihassankhn99 (https://sketchfab.com/alihassankhn99) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

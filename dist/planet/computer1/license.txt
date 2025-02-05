@@ -1,0 +1,11 @@
+Model Information:
+* title:	Computer
+* source:	https://sketchfab.com/3d-models/computer-9c5d76d91d134efe923bdd38ee425dcc
+* author:	lorem Models (https://sketchfab.com/Afthab333)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Computer" (https://sketchfab.com/3d-models/computer-9c5d76d91d134efe923bdd38ee425dcc) by lorem Models (https://sketchfab.com/Afthab333) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
