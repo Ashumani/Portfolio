@@ -5,7 +5,7 @@ import { Environment, OrbitControls, Preload, useGLTF } from "@react-three/drei"
 import CanvasLoader from "../Loader";
 
 const Computers = ({ isMobile }) => {
-  const computer = useGLTF("./desktop_pc/scene.gltf");
+  const computer = useGLTF("./gaming_desktop_pc/scene.gltf");
   // const computer = useGLTF("./planet/nacion_pirata_independiente_de_neutronia/scene.gltf");
 
   return (
@@ -19,10 +19,10 @@ const Computers = ({ isMobile }) => {
         castShadow
         shadow-mapSize={1024}
       />
-      <pointLight intensity={1} />
-      {/* <ambientLight intensity={0.5} />
-      <directionalLight position={[5, 5, 5]} intensity={1} castShadow />
-      <Environment preset="city" /> */}
+      <pointLight  position={[5, 5, 10]} intensity={-1} />
+      {/* <ambientLight intensity={0.1} />
+      <directionalLight position={[1, 1, 1]} intensity={0} castShadow /> */}
+      <Environment preset="city" />
       <primitive
         object={computer.scene}
         scale={isMobile ? 0.40 : 0.75}
@@ -46,7 +46,6 @@ const ComputersCanvas = () => {
     // Define a callback function to handle changes to the media query
     const handleMediaQueryChange = (event) => {
       setIsMobile(event.matches);
-      Computers(event.matches)
     };
 
     // Add the callback function as a listener for changes to the media query
