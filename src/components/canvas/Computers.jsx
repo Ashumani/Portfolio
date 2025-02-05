@@ -5,9 +5,8 @@ import { Environment, OrbitControls, Preload, useGLTF } from "@react-three/drei"
 import CanvasLoader from "../Loader";
 
 const Computers = ({ isMobile }) => {
-  // const computer = useGLTF("./desktop_pc/scene.gltf");
-  const computer = useGLTF("./planet/airports_around_the_world/scene.gltf");
-    
+  const computer = useGLTF("./desktop_pc/scene.gltf");
+  // const computer = useGLTF("./planet/nacion_pirata_independiente_de_neutronia/scene.gltf");
 
   return (
     <mesh>
@@ -26,7 +25,7 @@ const Computers = ({ isMobile }) => {
       <Environment preset="city" /> */}
       <primitive
         object={computer.scene}
-        scale={isMobile ? 5.40 : 10.75}
+        scale={isMobile ? 0.40 : 0.75}
         position={isMobile ? [0, -2, -0.7] : [0, -3.25, -1.5]}
         rotation={[-0.01, -0.2, -0.1]}
       />
@@ -47,6 +46,7 @@ const ComputersCanvas = () => {
     // Define a callback function to handle changes to the media query
     const handleMediaQueryChange = (event) => {
       setIsMobile(event.matches);
+      Computers(event.matches)
     };
 
     // Add the callback function as a listener for changes to the media query
