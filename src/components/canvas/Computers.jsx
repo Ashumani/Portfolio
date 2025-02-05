@@ -12,7 +12,7 @@ const Computers = ({ isMobile }) => {
     <mesh>
       <hemisphereLight intensity={0.15} groundColor='black' />
       <spotLight
-        position={[-20, 40, 10]}
+        position={[-20, 50, 10]}
         angle={0.12}
         penumbra={1}
         intensity={1}
@@ -25,8 +25,8 @@ const Computers = ({ isMobile }) => {
       <Environment preset="city" /> */}
       <primitive
         object={computer.scene}
-        scale={isMobile ? 0.7 : 0.70}
-        position={isMobile ? [0, -3, -2.2] : [0, -3.25, -1.5]}
+        scale={isMobile ? 0.4 : 0.75}
+        position={isMobile ? [0, -3, -0.7] : [0, -3.25, -1.5]}
         rotation={[-0.01, -0.2, -0.1]}
       />
     </mesh>
@@ -46,6 +46,7 @@ const ComputersCanvas = () => {
     // Define a callback function to handle changes to the media query
     const handleMediaQueryChange = (event) => {
       setIsMobile(event.matches);
+      console.log(isMobile)
     };
 
     // Add the callback function as a listener for changes to the media query
