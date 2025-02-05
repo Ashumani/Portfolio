@@ -3,7 +3,10 @@ name: Deploy React + Vite to GitHub Pages
 on:
   push:
     branches:
-      - main  # Change this if your default branch is different
+      - main  # Change if needed
+
+permissions:
+  contents: write  # ✅ Give GitHub Actions permission to push
 
 jobs:
   build-deploy:
@@ -16,7 +19,7 @@ jobs:
       - name: Install Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 18  # Use the version required for your project
+          node-version: 18  # Adjust as needed
 
       - name: Install dependencies
         run: npm install
@@ -29,4 +32,3 @@ jobs:
         with:
           branch: gh-pages
           folder: dist
-          clean: true
