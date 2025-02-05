@@ -5,7 +5,7 @@ import { Environment, OrbitControls, Preload, useGLTF } from "@react-three/drei"
 import CanvasLoader from "../Loader";
 
 const Computers = ({ isMobile }) => {
-  const computer = useGLTF("/desktop_pc/scene.gltf");
+  const computer = useGLTF("./desktop_pc/scene.gltf");
   // const computer = useGLTF("./planet/nacion_pirata_independiente_de_neutronia/scene.gltf");
 
   return (
