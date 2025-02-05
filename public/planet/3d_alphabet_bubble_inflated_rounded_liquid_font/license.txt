@@ -1,8 +1,0 @@
-Model Information:
-* title:	3D Alphabet bubble inflated rounded liquid font
-* source:	https://sketchfab.com/3d-models/3d-alphabet-bubble-inflated-rounded-liquid-font-d25b2e36e7644a2dae8caf37c64b0098
-* author:	rigasreal (https://sketchfab.com/rigasreal)
-
-Model License:
-* license type:	SKETCHFAB Standard (https://sketchfab.com/licenses)
-* requirements:	Under basic restrictions, use worldwide, on all types of media, commercially or not, and in all types of derivative works
