@@ -1,16 +1,18 @@
-import React, { Suspense, useEffect, useState } from "react";
+import React, { Suspense, useEffect, useState, useMemo } from "react";
 import { Canvas } from "@react-three/fiber";
 import { Environment, OrbitControls, Preload, useGLTF } from "@react-three/drei";
-
 import CanvasLoader from "../Loader";
 
 const Computers = ({ isMobile }) => {
-  const computer = useGLTF("./desktop_pc/scene.gltf");
-  // const computer = useGLTF("./planet/nacion_pirata_independiente_de_neutronia/scene.gltf");
+  const { scene, error } = useGLTF("./desktop_pc/scene.gltf");
+
+  if (error) {
+    console.error("Error loading 3D model:", error);
+  }
 
   return (
     <mesh>
-      <hemisphereLight intensity={0.15} groundColor='black' />
+      <hemisphereLight intensity={0.15} groundColor="black" />
       <spotLight
         position={[-20, 40, 10]}
         angle={0.12}
@@ -20,12 +22,9 @@ const Computers = ({ isMobile }) => {
         shadow-mapSize={1024}
       />
       <pointLight intensity={1} />
-      {/* <ambientLight intensity={0.5} />
-      <directionalLight position={[5, 5, 5]} intensity={1} castShadow />
-      <Environment preset="city" /> */}
       <primitive
-        object={computer.scene}
-        scale={isMobile ? 0.7 : 0.70}
+        object={scene}
+        scale={isMobile ? 0.7 : 0.7}
         position={isMobile ? [0, -3, -2.2] : [0, -3.25, -1.5]}
         rotation={[-0.01, -0.2, -0.1]}
       />
@@ -57,23 +56,34 @@ const ComputersCanvas = () => {
     };
   }, []);
 
+  // UseMemo to prevent unnecessary recalculations for lighting
+  const lighting = useMemo(() => (
+    <>
+      <hemisphereLight intensity={0.15} groundColor="black" />
+      <spotLight
+        position={[-20, 40, 10]}
+        angle={0.12}
+        penumbra={1}
+        intensity={1}
+        castShadow
+        shadow-mapSize={1024}
+      />
+      <pointLight intensity={1} />
+    </>
+  ), []);
+
   return (
     <Canvas
-      frameloop='demand'
+      frameloop="demand"
       shadows
       dpr={[1, 2]}
       camera={{ position: [20, 3, 5], fov: 25 }}
       gl={{ preserveDrawingBuffer: true }}
     >
       <Suspense fallback={<CanvasLoader />}>
-        <OrbitControls
-          enableZoom={false}
-          maxPolarAngle={Math.PI / 2}
-          minPolarAngle={Math.PI / 2}
-        />
+        <OrbitControls enableZoom={false} maxPolarAngle={Math.PI / 2} minPolarAngle={Math.PI / 2} />
         <Computers isMobile={isMobile} />
       </Suspense>
-
       <Preload all />
     </Canvas>
   );
