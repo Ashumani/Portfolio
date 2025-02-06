@@ -6,6 +6,9 @@ import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { IoIosPhonePortrait } from "react-icons/io";
+import { SiGmail } from "react-icons/si";
 
 const Contact = () => {
   const formRef = useRef();
@@ -74,12 +77,30 @@ const Contact = () => {
       >
         <p className={styles.sectionSubText}>Get in touch</p>
         <h3 className={styles.sectionHeadText}>Contact.</h3>
-        {/* <p className={styles.sectionSubText}>GitHub : https://github.com/Ashumani</p>
-        <p className={styles.sectionSubText}>LinkedIn : https://www.linkedin.com/in/manish-kirnapure/</p>
-        <p className={styles.sectionSubText}>Gmail : Manishkirnapure9@gmail.com</p>
-        <p className={styles.sectionSubText}>Mobile : +91-8793143976</p> */}
-
-        <form
+        <div className={styles.contactInfo}>
+        <p className={styles.sectionContact}>
+            Manish GaneshRao Kirnapure
+           
+          </p>
+          <p className={styles.sectionContact}>
+            Current City : Pune
+            Native City : Nagpur
+          </p>
+          <p className={styles.sectionContact}>
+            <SiGmail /> <a href="mailto:Manishkirnapure9@gmail.com">Manishkirnapure9@gmail.com</a>
+          </p>
+          <p className={styles.sectionContact}>
+            <IoIosPhonePortrait /> <a href="tel:+918793143976">+91-8793143976</a>
+          </p>
+          <p className={styles.sectionContact}>
+            <FaGithub /> <a href="https://github.com/Ashumani" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </p>
+          <p className={styles.sectionContact}>
+            <FaLinkedin /> <a href="https://www.linkedin.com/in/manish-kirnapure/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          </p>
+         
+        </div>
+        {/* <form
           ref={formRef}
           onSubmit={handleSubmit}
           className='mt-12 flex flex-col gap-8'
@@ -124,7 +145,7 @@ const Contact = () => {
           >
             {loading ? "Sending..." : "Send"}
           </button>
-        </form>
+        </form> */}
       </motion.div>
 
       <motion.div

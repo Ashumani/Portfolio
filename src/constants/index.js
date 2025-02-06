@@ -53,7 +53,7 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Apigee Developer",
+    title: "Gateway Developer",
     icon: web,
     afterFlipped: [
       "Apigee Developer",
@@ -64,8 +64,8 @@ const services = [
     title: "Front End Developer",
     icon: mobile,
     afterFlipped: [
-      "React",
-      "Angular",
+      "ReactJS",
+      "AngularJS",
       "HTML",
       "CSS",
       "Bootstrap",
@@ -79,7 +79,10 @@ const services = [
       "Node JS",
       "Python",
       "Java",
-      "JavaScript"
+      "PostgesSQL",
+      "MySQL",
+      "MongoDB",
+      
     ]
   },
   {
@@ -87,7 +90,9 @@ const services = [
     icon: creator,
     afterFlipped: [
       "GCP",
-      "Azur"
+      "Terraform",
+      "Splunk",
+      "Apache Kafka"
     ]
   },
 ];
@@ -139,10 +144,10 @@ const technologies = [
     name: "git",
     icon: git,
   },
-  {
-    name: "docker",
-    icon: docker,
-  },
+  // {
+  //   name: "docker",
+  //   icon: docker,
+  // },
 ];
 
 const experiences = [
