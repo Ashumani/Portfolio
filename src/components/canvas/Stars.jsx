@@ -9,7 +9,7 @@ const Stars = (props) => {
    const mediaQuery = window.matchMedia("(max-width: 500px)");
 
 
-  const [sphere] = useState(() => mediaQuery.matches ?  random.inSphere(new Float32Array(5000), { radius: 3 }) : random.inSphere(new Float32Array(5000), { radius: 1.2 }));
+  const [sphere] = useState(() => mediaQuery.matches ?  random.inSphere(new Float32Array(1000), { radius: 3 }) : random.inSphere(new Float32Array(5000), { radius: 1.2 }));
 
   useFrame((state, delta) => {
     ref.current.rotation.x -= delta / 10;
