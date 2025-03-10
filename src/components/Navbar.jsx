@@ -57,7 +57,7 @@ const Navbar = () => {
             >
               {/* <a href={`#${nav.id}`}>{nav.title}</a> */}
               {nav.id === "Resume" ? (
-                <a href="/Portfolio/public/Manish_Apigee_Developer.pdf" download>
+                <a href="/Portfolio/Manish_Apigee_Developer.pdf" download>
                   {nav.title}
                 </a>
               ) : (
