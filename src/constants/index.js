@@ -60,8 +60,8 @@ const services = [
     title: "Gateway Developer",
     icon: web,
     afterFlipped: [
-      "Apigee Developer",
-      "Layer 7 Developer"
+      "Apigee",
+      "Layer 7"
     ]
   },
   {
@@ -86,6 +86,7 @@ const services = [
       "PostgesSQL",
       "MySQL",
       "MongoDB",
+      "Git"
       
     ]
   },
@@ -96,7 +97,11 @@ const services = [
       "GCP",
       "Terraform",
       "Splunk",
-      "Apache Kafka"
+      "Apache Kafka",
+      "Shell Script",
+      "Kubernetes",
+      "Cloud Function",
+      
     ]
   },
 ];
