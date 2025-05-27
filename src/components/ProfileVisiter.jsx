@@ -10,7 +10,7 @@ const ProfileVisitCounter = () => {
     const [monthlyCount, setMonthlyCount] = useState(0);
     const [totalCount, setTotalCount] = useState(0);
     const [city, setCity] = useState([]);
-    const [visitCity, setVisitCity] = useState([]);
+    const [visitCity, setVisitCity] = useState('');
 
     useEffect(() => {
         const now = new Date();
@@ -23,9 +23,16 @@ const ProfileVisitCounter = () => {
                 const maxId = Math.max(...visitData.map(item => parseInt(item.id, 10)));
                 const uniqueCities = [...new Set(visitData.map(item => item.city))].join(", ");
 
+                let ct = ''
+                await axios.get('https://ipapi.co/json/')
+                    .then(response => {
+                        ct = response.data.city;
+                    })
+                    .catch(error => {
+                        console.error('Error fetching location:', error);
+                    });
 
-                await getCity();
-                await add(maxId + 1, now.toISOString(), city);
+                await add(maxId + 1, now.toISOString(), ct);
                 const oneDayAgo = new Date(now);
                 oneDayAgo.setDate(now.getDate() - 1);
 
@@ -69,7 +76,7 @@ const ProfileVisitCounter = () => {
     }
 
     const add = (id, date, city) => {
-        fetch('https://sheetdb.io/api/v1/58f61be4dda40' , {
+        fetch('https://sheetdb.io/api/v1/0byzew43sn0jh', {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
@@ -88,6 +95,7 @@ const ProfileVisitCounter = () => {
         axios.get('https://ipapi.co/json/')
             .then(response => {
                 setCity(response.data.city);
+                return response.data.city;
             })
             .catch(error => {
                 console.error('Error fetching location:', error);
