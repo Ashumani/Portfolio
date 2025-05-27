@@ -2,6 +2,7 @@ import { BrowserRouter, HashRouter } from "react-router-dom";
 // import AllRoutes from "./AllRoutes"
 
 import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, StarsCanvas, Blogs } from "./components";
+import ProfileVisitCounter from "./components/ProfileVisiter";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
         <Works />
         <Feedbacks />
         <Blogs />
+        <ProfileVisitCounter />
         <div className='relative z-0'>
           <Contact />
           <StarsCanvas />
