@@ -73,7 +73,7 @@ const About = () => {
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
 
-        I'm a seasoned Apigee developer with 4.6+ years of experience designing, developing, and troubleshooting APIs
+        I'm a seasoned Apigee developer with 5+ years of experience designing, developing, and troubleshooting APIs
         using Apigee Edge, X, and Hybrid.  My expertise spans policy configuration, shared flow creation, web services
         transformation, and GCP integration (Pub/Sub, Cloud Functions) with Node.js and Python. I'm passionate about
         building innovative solutions that drive business growth.  Currently exploring the exciting worlds of Machine
