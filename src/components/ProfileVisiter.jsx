@@ -23,16 +23,37 @@ const ProfileVisitCounter = () => {
                 const maxId = Math.max(...visitData.map(item => parseInt(item.id, 10)));
                 const uniqueCities = [...new Set(visitData.map(item => item.city))].join(", ");
 
+                let state = ''
+                let country = ''
                 let ct = ''
+                let latitude = 0
+                let longitude = 0
+                let pincode = 0
                 await axios.get('https://ipapi.co/json/')
                     .then(response => {
                         ct = response.data.city;
+                        latitude = response.data.latitude
+                        longitude = response.data.latitude
+                        pincode = response.data.latitude
+                        state = response.data.region
+                        country = response.data.country_name
                     })
                     .catch(error => {
                         console.error('Error fetching location:', error);
                     });
 
-                await add(maxId + 1, now.toISOString(), ct);
+                    let params = {
+                        id: maxId + 1,
+                        date: now.toISOString(),
+                        city: ct,
+                        lat:latitude,
+                        long: longitude,
+                        postal:pincode,
+                        state:state,
+                        country:country
+    
+                    }
+                await add(params);
                 const oneDayAgo = new Date(now);
                 oneDayAgo.setDate(now.getDate() - 1);
 
@@ -75,7 +96,7 @@ const ProfileVisitCounter = () => {
         })
     }
 
-    const add = (id, date, city) => {
+    const add = (params) => {
         fetch('https://sheetdb.io/api/v1/0byzew43sn0jh', {
             method: 'POST',
             headers: {
@@ -83,11 +104,7 @@ const ProfileVisitCounter = () => {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify({
-                data: {
-                    id: id,
-                    date: date,
-                    city: city
-                }
+                data: params
             })
         })
     }
