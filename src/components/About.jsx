@@ -8,6 +8,7 @@ import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 import { useState } from 'react';
+import profileImg from "./profile.png";
 
 import "./custom.css"
 
@@ -67,18 +68,34 @@ const About = () => {
       <motion.div variants={textVariant()}>
         <h2>Innovative Apigee Developer | API Management Specialist | Tech Enthusiast<br className='sm:block hidden' /></h2>
       </motion.div>
+      <div className="flex flex-row items-start justify-between gap-10 flex-wrap-reverse">
+        {/* Left: Text Section */}
+        <motion.div
+          variants={fadeIn("", "", 0.1, 1)}
+          className="flex-1 text-secondary text-[20px] max-w-3xl leading-[30px]"
+        >
+          <p className="text-justify">
+          Experienced Apigee developer with 5 years of expertise in API management. 
+          Skilled in designing, developing, and troubleshooting APIs using Google Apigee Edge, X , Hybrid, OPDK and Layer 7 Gateway. 
+          Proficient in policy configuration, shared flow creation, and web services transformation. 
+          Experienced in integrating GCP services such as Pub/Sub and Cloud Functions using Node.js and Python.
+           Effective in project management with JIRA and adept at creating Java callouts. 
+           Passionate about delivering innovative solutions to drive business growth. 
+           Let's connect. I am motivated and excited to collaborate and learn new technology. 
+           Currently, diving deep into Machine Learning , Artificial Intelligence and DevOps...
+          </p>
+        </motion.div>
 
-      <motion.p
-        variants={fadeIn("", "", 0.1, 1)}
-        className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
-      >
+        {/* Right: Image Section */}
+        <div className="flex-1 flex justify-center items-center">
+          <img
+            src={profileImg}
+            alt="Profile"
+            className="w-[350px] rounded-xl object-cover" 
+          />
+        </div>
+      </div>
 
-        I'm a seasoned Apigee developer with 5+ years of experience designing, developing, and troubleshooting APIs
-        using Apigee Edge, X, and Hybrid.  My expertise spans policy configuration, shared flow creation, web services
-        transformation, and GCP integration (Pub/Sub, Cloud Functions) with Node.js and Python. I'm passionate about
-        building innovative solutions that drive business growth.  Currently exploring the exciting worlds of Machine
-        Learning, AI, and DevOps.
-      </motion.p>
 
       <motion.div variants={textVariant()}>
         <h2></h2>

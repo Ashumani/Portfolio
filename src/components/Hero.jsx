@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
 import { useEffect, useState } from "react";
+import profileImg from "./profile.png";
 
 
 const Hero = () => {
@@ -33,17 +34,18 @@ const Hero = () => {
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
             Gateway & Full Stack Developer <br className='sm:block hidden' />
-         
+
           </p>
         </div>
       </div>
 
 
-      {!isMobile ? (<ComputersCanvas />):(
+      {!isMobile ? (<ComputersCanvas />
+      ) : (
         <div />
       )}
-      
 
+      {/* 
       <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
         <a href='#about'>
           <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
@@ -60,7 +62,9 @@ const Hero = () => {
             />
           </div>
         </a>
-      </div>
+      </div> */}
+
+     
     </section>
   );
 };

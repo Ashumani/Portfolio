@@ -18,6 +18,7 @@ const styles = {
   contactContainer: "text-center p-6",
   contactInfo: "flex flex-col items-center gap-3 mt-4",
   contactLink: "text-blue-500 font-bold hover:underline hover:text-blue-700",
+  imageClass: "w-[400px] max-w-full rounded-[10px]"
 
   
 };
