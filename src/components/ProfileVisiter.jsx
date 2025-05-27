@@ -10,61 +10,90 @@ const ProfileVisitCounter = () => {
     const [monthlyCount, setMonthlyCount] = useState(0);
     const [totalCount, setTotalCount] = useState(0);
     const [city, setCity] = useState([]);
+    const [visitCity, setVisitCity] = useState([]);
 
     useEffect(() => {
         const now = new Date();
-        const visitData = JSON.parse(localStorage.getItem('profileVisits') || '[]');
-        const cityData = JSON.parse(localStorage.getItem('profileVisitsByCity') || '[]');
 
-        // Add current visit
-        visitData.push(now.toISOString());
-        localStorage.setItem('profileVisits', JSON.stringify(visitData));
-        // let total = localStorage.getItem('totalProfileVisits');
 
-        // Define time boundaries
-        const oneDayAgo = new Date(now);
-        oneDayAgo.setDate(now.getDate() - 1);
+        fetch('https://sheetdb.io/api/v1/0byzew43sn0jh')
+            .then((response) => response.json())
+            .then(async (visitData) => {
 
-        const oneWeekAgo = new Date(now);
-        oneWeekAgo.setDate(now.getDate() - 7);
+                const maxId = Math.max(...visitData.map(item => parseInt(item.id, 10)));
+                const uniqueCities = [...new Set(visitData.map(item => item.city))].join(", ");
 
-        const oneMonthAgo = new Date(now);
-        oneMonthAgo.setMonth(now.getMonth() - 1);
 
-        // Filter counts
-        const daily = visitData.filter(date => new Date(date) > oneDayAgo).length;
-        const weekly = visitData.filter(date => new Date(date) > oneWeekAgo).length;
-        const monthly = visitData.filter(date => new Date(date) > oneMonthAgo).length;
-        const total = visitData.length;
+                await getCity();
+                await add(maxId + 1, now.toISOString(), city);
+                const oneDayAgo = new Date(now);
+                oneDayAgo.setDate(now.getDate() - 1);
 
-        // if(total){
-        //     total += 1
-        // }else{
-        //    total = 0
-        // }
+                const oneWeekAgo = new Date(now);
+                oneWeekAgo.setDate(now.getDate() - 7);
 
+                const oneMonthAgo = new Date(now);
+                oneMonthAgo.setMonth(now.getMonth() - 1);
+
+                // Filter counts
+                const daily = visitData.filter(item => new Date(item.date) > oneDayAgo).length;
+                const weekly = visitData.filter(item => new Date(item.date) > oneWeekAgo).length;
+                const monthly = visitData.filter(item => new Date(item.date) > oneMonthAgo).length;
+                const total = visitData.length;
+
+                setDailyCount(daily);
+                setWeeklyCount(weekly);
+                setMonthlyCount(monthly);
+                setTotalCount(total);
+                setVisitCity(uniqueCities);
+            }
+            );
+
+    }, []);
+
+    const update = (id, date, city) => {
+        fetch('https://sheetdb.io/api/v1/58f61be4dda40/id/' + id, {
+            method: 'PATCH',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                data: {
+                    id: id,
+                    date: date,
+                    city: city
+                }
+            })
+        })
+    }
+
+    const add = (id, date, city) => {
+        fetch('https://sheetdb.io/api/v1/58f61be4dda40' , {
+            method: 'POST',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                data: {
+                    id: id,
+                    date: date,
+                    city: city
+                }
+            })
+        })
+    }
+    const getCity = () => {
         axios.get('https://ipapi.co/json/')
             .then(response => {
-
-                if (!cityData.includes(response.data.city)) {
-                    cityData.push("  ");
-                    cityData.push(response.data.city);
-                    localStorage.setItem('profileVisitsByCity', JSON.stringify(cityData));
-                    
-                }
-                setCity(cityData);
-
+                setCity(response.data.city);
             })
             .catch(error => {
                 console.error('Error fetching location:', error);
             });
 
-        setDailyCount(daily);
-        setWeeklyCount(weekly);
-        setMonthlyCount(monthly);
-        setTotalCount(total);
-    }, []);
-
+    }
     return (
         <>
             <motion.div variants={textVariant()}>
@@ -72,34 +101,34 @@ const ProfileVisitCounter = () => {
                     People visited to Portfolio
                 </p>
                 <h2 className={`${styles.sectionHeadText} text-center`}>
-                    Profile Insights
+                    Visitor Insights
                 </h2>
             </motion.div>
             <div className="flex flex-wrap gap-4 justify-center p-4">
-               
+
                 <div className="flex justify-center items-center text-center text-white bg-gray-800 rounded-[20px] p-5">
-                    <h4 className="text-lg font-semibold ">Total Visits by : &nbsp;  </h4>
+                    <h4 className="text-lg font-semibold ">Total Visits : &nbsp;  </h4>
                     <p className=" text-2xl font-bold text-blue-600">{totalCount}</p>
                 </div>
                 <div className="flex justify-center items-center text-center text-white bg-gray-800 rounded-[20px] p-5">
-                    <h4 className="text-lg font-semibold">Monthly Visits by :&nbsp; </h4>
+                    <h4 className="text-lg font-semibold">Monthly Visits :&nbsp; </h4>
                     <p className="text-2xl font-bold text-purple-600">{monthlyCount}</p>
                 </div>
                 <div className="flex justify-center items-center text-center text-white bg-gray-800 rounded-[20px] p-5">
-                    <h4 className="text-lg font-semibold">Weekly Visits by : &nbsp; </h4>
+                    <h4 className="text-lg font-semibold">Weekly Visits : &nbsp; </h4>
                     <p className="text-2xl font-bold text-green-600">{weeklyCount}</p>
                 </div>
                 <div className="flex justify-center items-center text-center text-white bg-gray-800 rounded-[20px] p-5">
-                    <h4 className="text-lg font-semibold">Daily Visits by : &nbsp;</h4>
-                    <p className="text-2xl font-bold text-blue-600">{dailyCount}</p>
+                    <h4 className="text-lg font-semibold">Daily Visits : &nbsp;</h4>
+                    <p className="text-2xl font-bold text-red-600">{dailyCount}</p>
                 </div>
             </div>
             <div className="flex flex-wrap gap-4 justify-center p-4">
-               
-               <div className="flex justify-center items-center text-center text-white bg-gray-800 rounded-[20px] p-5">
-                   <h4 className="text-lg font-semibold">Visitor City: {city || 'Loading...'}</h4>
-               </div>
-           </div>
+
+                <div className="flex justify-center items-center text-center text-white bg-gray-800 rounded-[20px] p-5">
+                    <h4 className="text-lg text-purple-600 font-semibold">Visitor City : {visitCity || 'Loading...'}</h4>
+                </div>
+            </div>
         </>
 
     );
