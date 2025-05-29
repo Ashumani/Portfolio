@@ -34,7 +34,7 @@ const ProfileVisitCounter = () => {
                         ct = response.data.city;
                         latitude = response.data.latitude
                         longitude = response.data.latitude
-                        pincode = response.data.latitude
+                        pincode = response.data.postal
                         state = response.data.region
                         country = response.data.country_name
                     })
