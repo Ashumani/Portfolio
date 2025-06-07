@@ -36,6 +36,7 @@ import tesla from "./company/tesla.png";
 import cognizant from "./company/cognizant.svg";
 import velociter from "./company/velociter.png";
 import webquadra from "./company/webquadra.png";
+import bitwise_inc_logo from "./company/bitwise_inc_logo.png"
 
 
 import carrent from "./carrent.png";
@@ -79,6 +80,7 @@ export {
   starbucks,
   tesla,
   cognizant,
+  bitwise_inc_logo,
   velociter,
   webquadra,
   carrent,

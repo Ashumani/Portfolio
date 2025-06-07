@@ -25,6 +25,7 @@ import {
   tesla,
   shopify,
   cognizant,
+  bitwise_inc_logo,
   velociter,
   webquadra,
   carrent,
@@ -162,10 +163,26 @@ const technologies = [
 const experiences = [
   {
     title: "Apigee Developer",
+    company_name: "Bitwise",
+    icon: bitwise_inc_logo,
+    iconBg: "#da2a1b",
+    date: "June 2025 - till date",
+    points: [
+     "Design, develop, and manage API proxies using Apigee Edge and Apigee X.",
+     "Identify repetitive manual tasks and automate them using scripting or development tools.",
+     "Build Java-based utilities to support API proxy migration from Apigee Edge to Apigee X.",
+     "Design and execute migration strategy and tooling for seamless transition.",
+     "Develop and maintain middleware or support tools using Node.js.",
+     "Work closely with DevOps, QA, and API consumers to ensure smooth development lifecycle."
+    ],
+  },
+  
+  {
+    title: "Apigee Developer",
     company_name: "Cognizant",
     icon: cognizant,
     iconBg: "#E6DEDD",
-    date: "January 2020 - till date",
+    date: "January 2024 - May-2025",
     points: [
       "Proxy Development Expert: Proficient in developing and customizing proxies to meet specific business needs",
       "Proxy Document Expert: Create and maintain Ignite documents aligning with proxy requirements",

@@ -7,6 +7,7 @@ export default defineConfig({
   base: '/Portfolio/',
   server: {
     hmr: {
+      allowedHosts: ['0e82-106-221-216-201.ngrok-free.app'],
       overlay: false, // Disable error overlay
     },
   },
