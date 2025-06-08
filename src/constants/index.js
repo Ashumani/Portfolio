@@ -110,43 +110,6 @@ const services = [
 const technologies = [
   
   {
-    name: "Apigee",
-    icon: apigee
-  }, {
-    name: "Layer7",
-    icon: layer7
-  }, {
-    name: "Node JS",
-    icon: nodejs,
-  },
-  {
-    name: "React JS",
-    icon: reactjs,
-  },
-  {
-    name: "Python",
-    icon: python
-  },
-   {
-    name: "GCP",
-    icon: gcp
-  }, {
-    name: "Java",
-    icon: java
-  },
-  {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
-  },
-  {
-    name: "JavaScript",
-    icon: javascript,
-  },
-  {
     name: "MongoDB",
     icon: mongodb,
   },
