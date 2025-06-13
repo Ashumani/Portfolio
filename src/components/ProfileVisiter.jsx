@@ -12,6 +12,9 @@ const ProfileVisitCounter = () => {
     const [city, setCity] = useState([]);
     const [visitCity, setVisitCity] = useState('');
 
+    const [showForm, setShowForm] = useState(true);
+    const [email, setEmail] = useState('');
+
     useEffect(() => {
         const now = new Date();
 
@@ -33,7 +36,7 @@ const ProfileVisitCounter = () => {
                     .then(response => {
                         ct = response.data.city;
                         latitude = response.data.latitude
-                        longitude = response.data.latitude
+                        longitude = response.data.longitude
                         pincode = response.data.postal
                         state = response.data.region
                         country = response.data.country_name
@@ -41,18 +44,19 @@ const ProfileVisitCounter = () => {
                     .catch(error => {
                         console.error('Error fetching location:', error);
                     });
+                console.log("email : ",email)
 
-                    let params = {
-                        id: maxId + 1,
-                        date: now.toISOString(),
-                        city: ct,
-                        lat:latitude,
-                        long: longitude,
-                        postal:pincode,
-                        state:state,
-                        country:country
-    
-                    }
+                let params = {
+                    id: maxId + 1,
+                    date: now.toISOString(),
+                    city: ct,
+                    lat: latitude,
+                    long: longitude,
+                    postal: pincode,
+                    state: state,
+                    country: country
+
+                }
                 await add(params);
                 const oneDayAgo = new Date(now);
                 oneDayAgo.setDate(now.getDate() - 1);
@@ -154,6 +158,24 @@ const ProfileVisitCounter = () => {
                     <h4 className="text-lg text-purple-600 font-semibold">Visitor City : {visitCity || 'Loading...'}</h4>
                 </div>
             </div>
+
+            {showForm ? (
+                <form>
+                    <label htmlFor="email">Email:</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        autoComplete="email"
+                        value={email}
+                        placeholder="Enter your email"
+                        className="border p-2 rounded block mt-2"
+                    />
+                </form>
+            ) : (
+                <div />
+            )}
+
         </>
 
     );
