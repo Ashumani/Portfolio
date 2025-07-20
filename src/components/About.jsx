@@ -76,7 +76,7 @@ const About = () => {
           <img
             src={profileImg}
             alt="Profile"
-            className="w-[250px] sm:w-[350px] rounded-xl object-cover"
+            className="w-[250px] sm:w-[350px]  rounded-xl object-cover"
           />
         </div>
 
@@ -86,16 +86,7 @@ const About = () => {
           className="text-secondary text-[18px] leading-[28px] sm:col-span-8 lg:order-1"
         >
           <p className="text-justify">
-            Experienced Apigee developer with 5 years of expertise in API management.
-            Skilled in designing, developing, and troubleshooting APIs using Google
-            Apigee Edge, X, Hybrid, OPDK and Layer 7 Gateway. Proficient in policy
-            configuration, shared flow creation, and web services transformation.
-            Experienced in integrating GCP services such as Pub/Sub and Cloud
-            Functions using Node.js and Python. Effective in project management with
-            JIRA and adept at creating Java callouts. Passionate about delivering
-            innovative solutions to drive business growth. Let's connect. I am
-            motivated and excited to collaborate and learn new technology. Currently,
-            diving deep into Machine Learning, Artificial Intelligence, and DevOps...
+          Hi, I'm Manish Kirnapure — a passionate and dedicated software developer with over 5 years of experience in API management. I specialize in designing, developing, and troubleshooting APIs using Google Apigee Edge, X, Hybrid, OPDK, and Layer 7 Gateway. I'm skilled in policy configuration, shared flow creation, web services transformation, and integrating GCP services like Pub/Sub and Cloud Functions using Node.js and Python. I also have experience with Java callouts and project management tools like JIRA. I love coding regularly, constantly learning new technologies, and pushing my limits to grow both personally and professionally. Currently, I’m diving deeper into Machine Learning, Artificial Intelligence, and DevOps. My goal is to become a globally recognized developer by combining hard work, smart strategies, and a passion for innovation. Let’s connect and create impactful solutions together.
           </p>
         </motion.div>
         
