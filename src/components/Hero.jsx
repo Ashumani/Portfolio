@@ -4,6 +4,7 @@ import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
 import { useEffect, useState } from "react";
 import profileImg from "./profile.png";
+import DevCanvas from "./canvas/lost_dev";
 
 
 const Hero = () => {
@@ -42,7 +43,7 @@ const Hero = () => {
 
       {!isMobile ? (<ComputersCanvas />
       ) : (
-        <ComputersCanvas />
+        <DevCanvas />
       )}
 
       

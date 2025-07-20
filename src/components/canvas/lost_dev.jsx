@@ -4,10 +4,9 @@ import { Environment, OrbitControls, Preload, useGLTF } from "@react-three/drei"
 
 import CanvasLoader from "../Loader";
 
-const Computers = ({ isMobile }) => {
-  const computer = useGLTF("./gaming_desktop_pc/scene.gltf");
-  // const computer = useGLTF("./planet/nacion_pirata_independiente_de_neutronia/scene.gltf");
-
+const Lost_Dev = ({ isMobile }) => {
+  const lost_dev = useGLTF("./lost_programmer/scene.gltf");
+  
   return (
     <mesh>
       <hemisphereLight intensity={0.15} groundColor='black' />
@@ -24,16 +23,16 @@ const Computers = ({ isMobile }) => {
       <directionalLight position={[1, 1, 1]} intensity={0} castShadow /> */}
       <Environment preset="city" />
       <primitive
-        object={computer.scene}
-        scale={isMobile ? 0.40 : 0.75}
-        position={isMobile ? [0, -4, -0.6] : [0, -3.25, -1.5]}
-        rotation={[-0.01, -0.2, -0.1]}
+        object={lost_dev.scene}
+        scale={isMobile ? 1.40 : 1.75}
+        position={isMobile ? [0, -4, -0.6] : [0, -2.25, 0]}
+        rotation={[-2.10, -0.7, -0.1]}
       />
     </mesh>
   );
 };
 
-const ComputersCanvas = () => {
+const DevCanvas = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
@@ -71,7 +70,7 @@ const ComputersCanvas = () => {
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
         />
-        <Computers isMobile={isMobile} />
+        <Lost_Dev isMobile={isMobile} />
       </Suspense>
 
       <Preload all />
@@ -79,4 +78,4 @@ const ComputersCanvas = () => {
   );
 };
 
-export default ComputersCanvas;
+export default DevCanvas;
