@@ -10,7 +10,7 @@ const Stars = (props) => {
   useEffect(() => {
     const mediaQuery = window.matchMedia("(max-width: 500px)");
     const count = mediaQuery.matches ? 3000 : 5000;
-    const radius = mediaQuery.matches ? 3 : 1.2;
+    const radius = mediaQuery.matches ? 1 : 1.2;
 
     const generated = random.inSphere(new Float32Array(count * 3), { radius });
 
