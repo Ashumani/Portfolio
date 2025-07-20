@@ -6,11 +6,15 @@ import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaInstagram, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import { IoIosPhonePortrait } from "react-icons/io";
 import { SiGmail } from "react-icons/si";
+import DevCanvas from "./canvas/lost_dev";
+
 
 const Contact = () => {
+
+  const mediaQuery = window.matchMedia("(max-width: 500px)");
   const formRef = useRef();
   const [form, setForm] = useState({
     name: "",
@@ -83,7 +87,7 @@ const Contact = () => {
            
           </p>
           <p className={styles.sectionContact}>
-            Current City : Pune
+            Current City : Pune <br />
             Native City : Nagpur
           </p>
           <p className={styles.sectionContact}>
@@ -98,7 +102,12 @@ const Contact = () => {
           <p className={styles.sectionContact}>
             <FaLinkedin /> <a href="https://www.linkedin.com/in/manish-kirnapure/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
           </p>
-         
+          <p className={styles.sectionContact}>
+            <FaWhatsapp /> <a href="https://api.whatsapp.com/send/?phone=+918793143976&amp;text=Hey%20There&amp;type=phone_number&amp;app_absent=0" target="_blank" rel="noopener noreferrer">whatsapp</a>
+          </p>
+          {/* <p className={styles.sectionContact}>
+            <FaInstagram /> <a href="https://www.instagram.com/anon.cipherx/" target="_blank" rel="noopener noreferrer">Instagram</a>
+          </p> */}
         </div>
         {/* <form
           ref={formRef}
@@ -147,13 +156,25 @@ const Contact = () => {
           </button>
         </form> */}
       </motion.div>
-
+     
       <motion.div
         variants={slideIn("right", "tween", 0.2, 1)}
         className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'
       >
+       
         <EarthCanvas />
       </motion.div>
+      {mediaQuery.matches ? (<div />):(
+        <motion.div
+        variants={slideIn("right", "tween", 0.2, 1)}
+        className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'
+      >
+        <DevCanvas /> 
+        {/* <EarthCanvas /> */}
+      </motion.div>
+      )}    
+     
+
     </div>
   );
 };

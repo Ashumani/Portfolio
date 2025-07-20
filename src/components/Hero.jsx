@@ -40,8 +40,10 @@ const Hero = () => {
         </div>
       </div>
 
-
-      {!isMobile ? (<ComputersCanvas />
+ {/*<DevCanvas /> */}
+      {!isMobile ? (
+        <ComputersCanvas /> 
+        
       ) : (
         <DevCanvas />
       )}
