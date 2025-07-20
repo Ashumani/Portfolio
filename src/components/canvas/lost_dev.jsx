@@ -24,7 +24,7 @@ const Lost_Dev = ({ isMobile }) => {
       <Environment preset="city" />
       <primitive
         object={lost_dev.scene}
-        scale={isMobile ? 1.40 : 1.75}
+        scale={isMobile ? 1.45 : 1.75}
         position={isMobile ? [0, -4, -0.6] : [0, -2.25, 0]}
         rotation={[-2.10, -0.7, -0.1]}
       />

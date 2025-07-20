@@ -11,6 +11,7 @@ import { useState } from 'react';
 import profileImg from "./profile.png";
 
 import "./custom.css"
+import DevCanvas from "./canvas/lost_dev";
 
 const ServiceCard = ({ index, title, afterFlipped, icon }) => {
   const [flipped, setFlipped] = useState(false); // Track if the card is flipped
@@ -70,36 +71,35 @@ const About = () => {
       </motion.div>
 
       <div className="grid grid-cols-1 sm:grid-cols-12 gap-4 items-start">
-  {/* Right: Image Section (shows on top for mobile) */}
-  <div className="sm:col-span-4 lg:order-2 flex justify-center">
-    <img
-      src={profileImg}
-      alt="Profile"
-      className="w-[250px] sm:w-[350px] rounded-xl object-cover"
-    />
-  </div>
+        {/* Right: Image Section (shows on top for mobile) */}
+        <div className="sm:col-span-4 lg:order-2 flex justify-center">
+          <img
+            src={profileImg}
+            alt="Profile"
+            className="w-[250px] sm:w-[350px] rounded-xl object-cover"
+          />
+        </div>
 
-  {/* Left: Text Section */}
-  <motion.div
-    variants={fadeIn("", "", 0.1, 1)}
-    className="text-secondary text-[18px] leading-[28px] sm:col-span-8 lg:order-1"
-  >
-    <p className="text-justify">
-      Experienced Apigee developer with 5 years of expertise in API management.
-      Skilled in designing, developing, and troubleshooting APIs using Google
-      Apigee Edge, X, Hybrid, OPDK and Layer 7 Gateway. Proficient in policy
-      configuration, shared flow creation, and web services transformation.
-      Experienced in integrating GCP services such as Pub/Sub and Cloud
-      Functions using Node.js and Python. Effective in project management with
-      JIRA and adept at creating Java callouts. Passionate about delivering
-      innovative solutions to drive business growth. Let's connect. I am
-      motivated and excited to collaborate and learn new technology. Currently,
-      diving deep into Machine Learning, Artificial Intelligence, and DevOps...
-    </p>
-  </motion.div>
-</div>
-
-
+        {/* Left: Text Section */}
+        <motion.div
+          variants={fadeIn("", "", 0.1, 1)}
+          className="text-secondary text-[18px] leading-[28px] sm:col-span-8 lg:order-1"
+        >
+          <p className="text-justify">
+            Experienced Apigee developer with 5 years of expertise in API management.
+            Skilled in designing, developing, and troubleshooting APIs using Google
+            Apigee Edge, X, Hybrid, OPDK and Layer 7 Gateway. Proficient in policy
+            configuration, shared flow creation, and web services transformation.
+            Experienced in integrating GCP services such as Pub/Sub and Cloud
+            Functions using Node.js and Python. Effective in project management with
+            JIRA and adept at creating Java callouts. Passionate about delivering
+            innovative solutions to drive business growth. Let's connect. I am
+            motivated and excited to collaborate and learn new technology. Currently,
+            diving deep into Machine Learning, Artificial Intelligence, and DevOps...
+          </p>
+        </motion.div>
+        
+      </div>
 
       <motion.div variants={textVariant()}>
         <h2></h2>
