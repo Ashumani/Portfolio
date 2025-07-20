@@ -42,7 +42,7 @@ const Hero = () => {
 
       {!isMobile ? (<ComputersCanvas />
       ) : (
-        <div />
+        <ComputersCanvas />
       )}
 
       
