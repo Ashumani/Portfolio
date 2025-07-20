@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { fadeIn, textVariant } from "../utils/motion";
 import axios from 'axios';
+import BarChart from './chart/barchart';
 
 const ProfileVisitCounter = () => {
     const [dailyCount, setDailyCount] = useState(0);
@@ -14,6 +15,10 @@ const ProfileVisitCounter = () => {
 
     const [showForm, setShowForm] = useState(true);
     const [email, setEmail] = useState('');
+    const [counts, setCounts] = useState([])
+    const [cities, setCities] = useState([])
+    const [bar2key, setBar2key] = useState([])
+    const [bar2value, setBar2Value] = useState([])
 
     useEffect(() => {
         const now = new Date();
@@ -25,6 +30,20 @@ const ProfileVisitCounter = () => {
 
                 const maxId = Math.max(...visitData.map(item => parseInt(item.id, 10)));
                 const uniqueCities = [...new Set(visitData.map(item => item.city))].join(", ");
+
+                const cityCount = visitData.reduce((acc, curr) => {
+                    const city = curr.city;
+                    if (acc[city]) {
+                        acc[city] += 1;
+                    } else {
+                        acc[city] = 1;
+                    }
+                    return acc;
+                }, {});
+
+                setCounts(Object.values(cityCount));        // ['Pune', 'Mumbai', 'Delhi']
+                setCities(Object.keys(cityCount));
+
 
                 let state = ''
                 let country = ''
@@ -44,7 +63,7 @@ const ProfileVisitCounter = () => {
                     .catch(error => {
                         console.error('Error fetching location:', error);
                     });
-                console.log("email : ",email)
+                // console.log("email : ", email)
 
                 let params = {
                     id: maxId + 1,
@@ -73,6 +92,8 @@ const ProfileVisitCounter = () => {
                 const monthly = visitData.filter(item => new Date(item.date) > oneMonthAgo).length;
                 const total = visitData.length;
 
+                setBar2key(["Total", "Monthly","weekly","daily"])
+                setBar2Value([total, monthly, weekly, daily])
                 setDailyCount(daily);
                 setWeeklyCount(weekly);
                 setMonthlyCount(monthly);
@@ -158,7 +179,20 @@ const ProfileVisitCounter = () => {
                     <h4 className="text-lg text-purple-600 font-semibold">Visitor City : {visitCity || 'Loading...'}</h4>
                 </div>
             </div>
-{/* 
+            {cities.length > 1 ? (
+    <div className="flex flex-wrap justify-center gap-8 px-4 py-6">
+      <div className="w-full md:w-[48%]">
+        <BarChart label={cities} dataSet={counts} />
+      </div>
+      <div className="w-full md:w-[48%]">
+        <BarChart label={bar2key} dataSet={bar2value} />
+      </div>
+    </div>
+  ) : (
+    <div></div>
+  )}
+
+            {/* 
             {showForm ? (
                 <form>
                     <label htmlFor="email">Email:</label>
