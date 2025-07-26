@@ -20,6 +20,7 @@ const ServiceCard = ({ index, title, afterFlipped, icon }) => {
     setFlipped(!flipped); // Toggle the flipped state on card click
   };
 
+
   return (
     <Tilt className='xs:w-[250px] w-full'>
       <motion.div

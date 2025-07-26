@@ -53,6 +53,7 @@ const ExperienceCard = ({ experience }) => {
         ))}
       </ul>
     </VerticalTimelineElement>
+    
   );
 };
 
