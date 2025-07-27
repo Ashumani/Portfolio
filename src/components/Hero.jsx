@@ -5,6 +5,7 @@ import { ComputersCanvas } from "./canvas";
 import { useEffect, useState } from "react";
 import profileImg from "./profile.png";
 import DevCanvas from "./canvas/lost_dev";
+import GalaxyCanvas from "./canvas/galaxy";
 
 
 const Hero = () => {
@@ -41,8 +42,10 @@ const Hero = () => {
       </div>
 
  {/*<DevCanvas /> */}
+  {/* <ComputersCanvas />  */}
       {!isMobile ? (
-        <ComputersCanvas /> 
+       
+        <GalaxyCanvas /> 
         
       ) : (
         <DevCanvas />
