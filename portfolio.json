@@ -1,0 +1,4299 @@
+[
+ {
+  "id": 1,
+  "date": "2025-05-27T05:33:42.763Z",
+  "city": "Pune"
+ },
+ {
+  "id": 2,
+  "date": "2025-05-27T16:21:23.615Z",
+  "city": "Pune"
+ },
+ {
+  "id": 3,
+  "date": "2025-05-27T17:57:42.494Z",
+  "city": "Pune"
+ },
+ {
+  "id": 4,
+  "date": "2025-05-27T18:16:07.318Z",
+  "city": "Pune"
+ },
+ {
+  "id": 5,
+  "date": "2025-05-27T18:20:13.125Z",
+  "city": "Pune"
+ },
+ {
+  "id": 6,
+  "date": "2025-05-27T18:21:25.438Z",
+  "city": "Pune"
+ },
+ {
+  "id": 7,
+  "date": "2025-05-27T18:29:50.446Z",
+  "city": "Pune"
+ },
+ {
+  "id": 8,
+  "date": "2025-05-27T18:32:29.524Z",
+  "city": "Pune"
+ },
+ {
+  "id": 9,
+  "date": "2025-05-27T18:47:09.397Z",
+  "city": "Pune"
+ },
+ {
+  "id": 10,
+  "date": "2025-05-27T18:48:50.867Z",
+  "city": "Pune"
+ },
+ {
+  "id": 11,
+  "date": "2025-05-27T19:00:16.867Z",
+  "city": "Pune"
+ },
+ {
+  "id": 12,
+  "date": "2025-05-27T19:00:28.248Z",
+  "city": "Pune"
+ },
+ {
+  "id": 13,
+  "date": "2025-05-27T19:00:51.637Z",
+  "city": "Pune"
+ },
+ {
+  "id": 14,
+  "date": "2025-05-27T19:01:35.791Z",
+  "city": "Nashik"
+ },
+ {
+  "id": 15,
+  "date": "2025-05-27T19:01:55.144Z",
+  "city": "Nashik"
+ },
+ {
+  "id": 16,
+  "date": "2025-05-27T19:02:11.214Z",
+  "city": "Nashik"
+ },
+ {
+  "id": 17,
+  "date": "2025-05-27T19:04:39.419Z",
+  "city": "Nashik"
+ },
+ {
+  "id": 18,
+  "date": "2025-05-27T19:14:33.539Z",
+  "city": "Pune"
+ },
+ {
+  "id": 19,
+  "date": "2025-05-27T19:16:14.573Z",
+  "city": "Pune"
+ },
+ {
+  "id": 20,
+  "date": "2025-05-27T19:27:53.465Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 18.5211,
+  "postal": 411018,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 21,
+  "date": "2025-05-27T19:28:27.052Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 18.5211,
+  "postal": 411018,
+  "state": "Maharashtra",
+  "country": "IN"
+ },
+ {
+  "id": 22,
+  "date": "2025-05-27T19:28:57.055Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 18.5211,
+  "postal": 411018,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 23,
+  "date": "2025-05-27T19:31:25.437Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 18.5211,
+  "postal": 411018,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 24,
+  "date": "2025-05-27T19:39:23.568Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 18.5211,
+  "postal": 411018,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 25,
+  "date": "2025-05-27T19:41:12.846Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 18.5211,
+  "postal": 411018,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 26,
+  "date": "2025-05-28T05:08:13.392Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 18.5211,
+  "postal": 411018,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 27,
+  "date": "2025-05-28T05:28:08.927Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 18.5211,
+  "postal": 411018,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 28,
+  "date": "2025-05-28T05:31:33.203Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 18.5211,
+  "postal": 411018,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 29,
+  "date": "2025-05-28T05:45:29.841Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 18.5211,
+  "postal": 411018,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 30,
+  "date": "2025-05-28T06:16:50.732Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 18.5211,
+  "postal": 411018,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 31,
+  "date": "2025-05-28T06:18:12.466Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 18.5211,
+  "postal": 411018,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 32,
+  "date": "2025-05-29T08:14:02.638Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 18.5211,
+  "postal": 411018,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 33,
+  "date": "2025-05-29T08:14:20.554Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 18.5211,
+  "postal": 411018,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 34,
+  "date": "2025-05-29T08:15:06.465Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 18.5211,
+  "postal": 411018,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 35,
+  "date": "2025-05-29T08:15:34.799Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 18.5211,
+  "postal": 411018,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 36,
+  "date": "2025-05-29T08:15:48.840Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 18.5211,
+  "postal": 411018,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 37,
+  "date": "2025-05-29T16:06:48.511Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 18.5211,
+  "postal": 411019,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 38,
+  "date": "2025-05-29T16:11:45.992Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 18.5211,
+  "postal": 411019,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 39,
+  "date": "2025-05-29T16:11:57.120Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 18.5211,
+  "postal": 411019,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 40,
+  "date": "2025-05-29T16:12:50.599Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 18.5211,
+  "postal": 411019,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 41,
+  "date": "2025-05-29T17:07:46.394Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 18.5211,
+  "postal": 411019,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 42,
+  "date": "2025-05-29T17:10:45.406Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 18.5211,
+  "postal": 411019,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 43,
+  "date": "2025-05-30T07:37:21.749Z",
+  "lat": 0,
+  "long": 0,
+  "postal": 0
+ },
+ {
+  "id": 44,
+  "date": "2025-06-01T02:31:04.678Z",
+  "city": "Singapore",
+  "lat": 1.2872,
+  "long": 1.2872,
+  "postal": 17,
+  "country": "Singapore"
+ },
+ {
+  "id": 45,
+  "date": "2025-06-01T10:48:43.245Z",
+  "city": "Singapore",
+  "lat": 1.2872,
+  "long": 1.2872,
+  "postal": 17,
+  "country": "Singapore"
+ },
+ {
+  "id": 46,
+  "date": "2025-06-02T16:31:51.279Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 18.5211,
+  "postal": 411005,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 47,
+  "date": "2025-06-07T04:06:25.241Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 18.5211,
+  "postal": 411001,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 48,
+  "date": "2025-06-07T04:08:39.395Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 18.5211,
+  "postal": 411001,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 49,
+  "date": "2025-06-07T04:22:04.505Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 18.5211,
+  "postal": 411001,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 50,
+  "date": "2025-06-07T04:39:54.850Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 18.5211,
+  "postal": 411001,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 51,
+  "date": "2025-06-07T04:50:26.063Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 18.5211,
+  "postal": 411001,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 52,
+  "date": "2025-06-08T10:11:18.965Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 21.1463,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 53,
+  "date": "2025-06-08T10:14:17.960Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 21.1463,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 54,
+  "date": "2025-06-08T10:15:27.449Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 21.1463,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 55,
+  "date": "2025-06-08T10:15:32.597Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 21.1463,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 56,
+  "date": "2025-06-08T10:15:35.987Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 21.1463,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 57,
+  "date": "2025-06-08T10:15:38.929Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 21.1463,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 58,
+  "date": "2025-06-08T10:15:41.219Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 21.1463,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 59,
+  "date": "2025-06-08T10:15:43.309Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 21.1463,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 60,
+  "date": "2025-06-08T10:15:48.689Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 21.1463,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 61,
+  "date": "2025-06-08T10:15:51.584Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 21.1463,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 62,
+  "date": "2025-06-08T10:15:55.751Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 21.1463,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 62,
+  "date": "2025-06-08T10:15:57.804Z",
+  "lat": 0,
+  "long": 0,
+  "postal": 0
+ },
+ {
+  "id": 63,
+  "date": "2025-06-08T10:15:59.636Z",
+  "lat": 0,
+  "long": 0,
+  "postal": 0
+ },
+ {
+  "id": 64,
+  "date": "2025-06-08T10:16:02.630Z",
+  "lat": 0,
+  "long": 0,
+  "postal": 0
+ },
+ {
+  "id": 65,
+  "date": "2025-06-08T10:16:04.790Z",
+  "lat": 0,
+  "long": 0,
+  "postal": 0
+ },
+ {
+  "id": 66,
+  "date": "2025-06-08T10:16:06.751Z",
+  "lat": 0,
+  "long": 0,
+  "postal": 0
+ },
+ {
+  "id": 67,
+  "date": "2025-06-08T10:16:09.356Z",
+  "lat": 0,
+  "long": 0,
+  "postal": 0
+ },
+ {
+  "id": 67,
+  "date": "2025-06-08T10:16:11.699Z",
+  "lat": 0,
+  "long": 0,
+  "postal": 0
+ },
+ {
+  "id": 68,
+  "date": "2025-06-08T10:16:13.747Z",
+  "lat": 0,
+  "long": 0,
+  "postal": 0
+ },
+ {
+  "id": 69,
+  "date": "2025-06-08T10:16:17.192Z",
+  "lat": 0,
+  "long": 0,
+  "postal": 0
+ },
+ {
+  "id": 69,
+  "date": "2025-06-08T10:16:17.380Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 21.1463,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 70,
+  "date": "2025-06-08T10:17:17.991Z",
+  "lat": 0,
+  "long": 0,
+  "postal": 0
+ },
+ {
+  "id": 71,
+  "date": "2025-06-08T10:17:26.676Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 21.1463,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 72,
+  "date": "2025-06-08T10:18:23.511Z",
+  "city": "Kolkata",
+  "lat": 22.5643,
+  "long": 22.5643,
+  "postal": 700001,
+  "state": "West Bengal",
+  "country": "India"
+ },
+ {
+  "id": 73,
+  "date": "2025-06-08T10:25:06.690Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 21.1463,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 74,
+  "date": "2025-06-08T10:25:30.654Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 21.1463,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 75,
+  "date": "2025-06-08T10:26:05.622Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 21.1463,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 76,
+  "date": "2025-06-08T10:26:23.390Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 21.1463,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 77,
+  "date": "2025-06-08T10:26:41.299Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 21.1463,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 78,
+  "date": "2025-06-08T10:26:49.540Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 21.1463,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 79,
+  "date": "2025-06-08T10:27:55.581Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 21.1463,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 80,
+  "date": "2025-06-08T10:28:10.497Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 21.1463,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 81,
+  "date": "2025-06-08T10:29:15.131Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 21.1463,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 82,
+  "date": "2025-06-08T10:30:04.169Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 21.1463,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 83,
+  "date": "2025-06-08T10:30:27.218Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 21.1463,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 84,
+  "date": "2025-06-08T10:30:31.295Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 21.1463,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 85,
+  "date": "2025-06-08T10:30:51.762Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 21.1463,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 86,
+  "date": "2025-06-08T10:31:04.560Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 21.1463,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 87,
+  "date": "2025-06-08T10:31:22.298Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 21.1463,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 88,
+  "date": "2025-06-08T10:31:32.262Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 21.1463,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 89,
+  "date": "2025-06-08T10:31:42.200Z",
+  "lat": 0,
+  "long": 0,
+  "postal": 0
+ },
+ {
+  "id": 90,
+  "date": "2025-06-08T10:32:42.287Z",
+  "lat": 0,
+  "long": 0,
+  "postal": 0
+ },
+ {
+  "id": 91,
+  "date": "2025-06-08T10:32:55.268Z",
+  "lat": 0,
+  "long": 0,
+  "postal": 0
+ },
+ {
+  "id": 92,
+  "date": "2025-06-08T10:33:38.100Z",
+  "lat": 0,
+  "long": 0,
+  "postal": 0
+ },
+ {
+  "id": 93,
+  "date": "2025-06-08T10:35:08.191Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 21.1463,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 94,
+  "date": "2025-06-08T10:35:31.240Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 21.1463,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 95,
+  "date": "2025-06-08T10:35:54.611Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 21.1463,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 96,
+  "date": "2025-06-08T10:36:16.888Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 21.1463,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 97,
+  "date": "2025-06-08T10:37:01.151Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 21.1463,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 98,
+  "date": "2025-06-08T10:39:23.375Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 21.1463,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 99,
+  "date": "2025-06-08T10:40:13.375Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 21.1463,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 100,
+  "date": "2025-06-08T10:45:13.565Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 21.1463,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 101,
+  "date": "2025-06-08T10:45:58.330Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 21.1463,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 102,
+  "date": "2025-06-08T10:46:19.876Z",
+  "lat": 0,
+  "long": 0,
+  "postal": 0
+ },
+ {
+  "id": 103,
+  "date": "2025-06-08T10:49:01.145Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 21.1463,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 104,
+  "date": "2025-06-08T10:49:24.824Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 21.1463,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 105,
+  "date": "2025-06-08T10:49:57.651Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 21.1463,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 106,
+  "date": "2025-06-08T10:50:14.494Z",
+  "lat": 0,
+  "long": 0,
+  "postal": 0
+ },
+ {
+  "id": 107,
+  "date": "2025-06-08T10:50:31.130Z",
+  "lat": 0,
+  "long": 0,
+  "postal": 0
+ },
+ {
+  "id": 108,
+  "date": "2025-06-08T10:50:34.989Z",
+  "lat": 0,
+  "long": 0,
+  "postal": 0
+ },
+ {
+  "id": 109,
+  "date": "2025-06-08T10:53:09.546Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 21.1463,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 110,
+  "date": "2025-06-08T10:53:20.636Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 21.1463,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 111,
+  "date": "2025-06-08T10:53:41.458Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 21.1463,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 112,
+  "date": "2025-06-08T10:53:52.628Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 21.1463,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 113,
+  "date": "2025-06-08T10:53:57.684Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 21.1463,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 114,
+  "date": "2025-06-08T10:55:26.871Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 21.1463,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 115,
+  "date": "2025-06-08T10:59:25.958Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 21.1463,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 116,
+  "date": "2025-06-08T10:59:43.258Z",
+  "city": "Kolkata",
+  "lat": 22.5643,
+  "long": 22.5643,
+  "postal": 700001,
+  "state": "West Bengal",
+  "country": "India"
+ },
+ {
+  "id": 117,
+  "date": "2025-06-08T11:00:10.166Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 21.1463,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 118,
+  "date": "2025-06-08T11:00:15.298Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 21.1463,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 118,
+  "date": "2025-06-08T11:00:33.706Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 21.1463,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 118,
+  "date": "2025-06-08T11:00:33.661Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 21.1463,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 119,
+  "date": "2025-06-08T11:02:41.178Z",
+  "lat": 0,
+  "long": 0,
+  "postal": 0
+ },
+ {
+  "id": 120,
+  "date": "2025-06-08T11:02:47.462Z",
+  "lat": 0,
+  "long": 0,
+  "postal": 0
+ },
+ {
+  "id": 121,
+  "date": "2025-06-08T11:04:16.003Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 21.1463,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 122,
+  "date": "2025-06-08T11:04:26.000Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 21.1463,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 123,
+  "date": "2025-06-08T11:06:25.611Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 21.1463,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 124,
+  "date": "2025-06-08T11:09:55.300Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 21.1463,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 125,
+  "date": "2025-06-08T11:17:57.627Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 21.1463,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 126,
+  "date": "2025-06-08T11:23:24.938Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 21.1463,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 127,
+  "date": "2025-06-08T11:27:03.038Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 21.1463,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 128,
+  "date": "2025-06-08T11:31:25.961Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 21.1463,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 129,
+  "date": "2025-06-08T11:31:42.436Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 21.1463,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 130,
+  "date": "2025-06-08T11:44:17.981Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 21.1463,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 131,
+  "date": "2025-06-08T11:45:16.218Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 21.1463,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 132,
+  "date": "2025-06-08T11:52:29.727Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 21.1463,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 133,
+  "date": "2025-06-08T11:52:52.245Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 21.1463,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 134,
+  "date": "2025-06-08T11:53:56.756Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 21.1463,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 135,
+  "date": "2025-06-08T11:54:38.159Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 21.1463,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 136,
+  "date": "2025-06-08T11:55:02.967Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 21.1463,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 137,
+  "date": "2025-06-08T11:56:35.978Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 21.1463,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 138,
+  "date": "2025-06-08T11:57:44.936Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 21.1463,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 139,
+  "date": "2025-06-08T12:02:55.730Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 21.1463,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 140,
+  "date": "2025-06-08T12:03:04.900Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 21.1463,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 141,
+  "date": "2025-06-08T12:03:58.920Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 21.1463,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 142,
+  "date": "2025-06-08T12:04:56.785Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 21.1463,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 143,
+  "date": "2025-06-08T12:05:30.510Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 21.1463,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 144,
+  "date": "2025-06-08T12:05:45.680Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 21.1463,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 145,
+  "date": "2025-06-08T12:06:14.089Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 21.1463,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 146,
+  "date": "2025-06-08T12:08:21.753Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 21.1463,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 147,
+  "date": "2025-06-08T12:08:29.915Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 21.1463,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 148,
+  "date": "2025-06-08T12:09:15.775Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 21.1463,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 149,
+  "date": "2025-06-08T12:09:51.301Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 21.1463,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 150,
+  "date": "2025-06-08T12:11:24.459Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 21.1463,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 151,
+  "date": "2025-06-08T12:12:28.624Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 21.1463,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 152,
+  "date": "2025-06-08T12:13:36.346Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 21.1463,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 153,
+  "date": "2025-06-08T12:13:52.329Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 21.1463,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 154,
+  "date": "2025-06-08T12:15:33.963Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 21.1463,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 155,
+  "date": "2025-06-08T12:18:42.531Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 21.1463,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 156,
+  "date": "2025-06-08T12:20:37.989Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 21.1463,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 157,
+  "date": "2025-06-08T12:25:16.817Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 21.1463,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 158,
+  "date": "2025-06-08T12:25:34.838Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 21.1463,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 159,
+  "date": "2025-06-08T12:29:33.097Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 21.1463,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 160,
+  "date": "2025-06-08T12:30:05.136Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 21.1463,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 161,
+  "date": "2025-06-08T12:30:23.984Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 21.1463,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 162,
+  "date": "2025-06-08T12:31:11.143Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 21.1463,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 163,
+  "date": "2025-06-08T12:32:56.516Z",
+  "lat": 0,
+  "long": 0,
+  "postal": 0
+ },
+ {
+  "id": 163,
+  "date": "2025-06-08T12:32:51.809Z",
+  "city": "Nāchangaon",
+  "lat": 20.6974,
+  "long": 20.6974,
+  "postal": 442306,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 164,
+  "date": "2025-06-08T12:33:14.559Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 21.1463,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 165,
+  "date": "2025-06-09T18:44:32.347Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 18.5211,
+  "postal": 411007,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 166,
+  "date": "2025-06-09T19:19:22.036Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 18.5211,
+  "postal": 411007,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 167,
+  "date": "2025-06-10T05:28:04.663Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 18.5211,
+  "postal": 411007,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 168,
+  "date": "2025-06-10T11:33:26.385Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 18.5211,
+  "postal": 411003,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 169,
+  "date": "2025-06-10T13:09:32.931Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 18.5211,
+  "postal": 411001,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 170,
+  "date": "2025-06-10T13:44:44.365Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 18.5211,
+  "postal": 411017,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 171,
+  "date": "2025-06-10T17:47:59.396Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 18.5211,
+  "postal": 411001,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 172,
+  "date": "2025-06-12T04:13:41.399Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 21.1463,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 173,
+  "date": "2025-06-12T07:39:09.543Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 21.1463,
+  "postal": 440012,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 174,
+  "date": "2025-06-13T11:30:30.330Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 79.0849,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 175,
+  "date": "2025-06-13T11:31:10.005Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 79.0849,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 176,
+  "date": "2025-06-13T11:31:38.427Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 79.0849,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 177,
+  "date": "2025-06-13T11:31:51.598Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 79.0849,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 178,
+  "date": "2025-06-13T11:35:37.581Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 18.5211,
+  "postal": 411001,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 179,
+  "date": "2025-06-13T11:39:56.572Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 79.0849,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 180,
+  "date": "2025-06-13T11:40:57.034Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 79.0849,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 181,
+  "date": "2025-06-13T11:41:08.355Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 79.0849,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 182,
+  "date": "2025-06-13T11:43:39.511Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 79.0849,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 183,
+  "date": "2025-06-13T11:52:50.687Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 79.0849,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 184,
+  "date": "2025-06-13T11:53:23.050Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 79.0849,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 185,
+  "date": "2025-06-13T12:22:38.747Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 79.0849,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 186,
+  "date": "2025-06-18T08:20:54.023Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 79.0849,
+  "postal": 440010,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 187,
+  "date": "2025-06-21T08:44:00.751Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 79.0849,
+  "postal": 440010,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 188,
+  "date": "2025-06-22T15:59:21.446Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411019,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 189,
+  "date": "2025-06-22T15:59:25.002Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411019,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 190,
+  "date": "2025-06-22T15:59:34.879Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411019,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 191,
+  "date": "2025-06-24T15:31:58.716Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411002,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 192,
+  "date": "2025-06-24T19:20:10.059Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411019,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 193,
+  "date": "2025-06-25T17:05:57.475Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411002,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 194,
+  "date": "2025-06-29T13:34:46.266Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411005,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 195,
+  "date": "2025-06-29T13:38:08.932Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411005,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 196,
+  "date": "2025-07-01T19:20:13.323Z",
+  "city": "Patna",
+  "lat": 25.5943,
+  "long": 85.1352,
+  "postal": 800020,
+  "state": "Bihar",
+  "country": "India"
+ },
+ {
+  "id": 197,
+  "date": "2025-07-03T18:19:53.082Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411019,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 198,
+  "date": "2025-07-03T18:31:53.959Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 79.0849,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 199,
+  "date": "2025-07-03T18:35:40.695Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 79.0849,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 200,
+  "date": "2025-07-03T18:55:48.056Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 79.0849,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 201,
+  "date": "2025-07-03T19:05:18.219Z",
+  "city": "Hinganghāt",
+  "lat": 20.5475,
+  "long": 78.8384,
+  "postal": 442301,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 202,
+  "date": "2025-07-03T19:10:10.147Z",
+  "city": "Hinganghāt",
+  "lat": 20.5475,
+  "long": 78.8384,
+  "postal": 442301,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 203,
+  "date": "2025-07-05T13:43:10.857Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411007,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 204,
+  "date": "2025-07-05T13:48:10.287Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411007,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 205,
+  "date": "2025-07-06T06:51:32.381Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 79.0849,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 206,
+  "date": "2025-07-06T06:55:15.937Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 79.0849,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 207,
+  "date": "2025-07-06T07:05:38.560Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 79.0849,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 208,
+  "date": "2025-07-06T09:30:52.992Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 79.0849,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 209,
+  "date": "2025-07-06T09:31:26.757Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 79.0849,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 210,
+  "date": "2025-07-06T09:32:11.745Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 79.0849,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 211,
+  "date": "2025-07-07T18:01:30.018Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 79.0849,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 212,
+  "date": "2025-07-08T11:18:03.366Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 79.0849,
+  "postal": 440016,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 213,
+  "date": "2025-07-12T10:31:36.385Z",
+  "city": "Hinganghāt",
+  "lat": 20.5475,
+  "long": 78.8384,
+  "postal": 442301,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 214,
+  "date": "2025-07-12T10:35:29.437Z",
+  "city": "Hinganghāt",
+  "lat": 20.5475,
+  "long": 78.8384,
+  "postal": 442301,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 215,
+  "date": "2025-07-13T06:16:09.437Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411013,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 216,
+  "date": "2025-07-13T07:54:38.171Z",
+  "city": "Proddatūr",
+  "lat": 14.7464,
+  "long": 78.5448,
+  "postal": 516361,
+  "state": "Andhra Pradesh",
+  "country": "India"
+ },
+ {
+  "id": 217,
+  "date": "2025-07-19T17:30:42.100Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 218,
+  "date": "2025-07-20T06:22:15.836Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 219,
+  "date": "2025-07-20T06:22:35.992Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 220,
+  "date": "2025-07-20T06:33:32.177Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 221,
+  "date": "2025-07-20T06:33:48.912Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 222,
+  "date": "2025-07-20T06:35:33.396Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 223,
+  "date": "2025-07-20T06:35:38.193Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 224,
+  "date": "2025-07-20T07:23:44.863Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 225,
+  "date": "2025-07-20T07:27:24.541Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 226,
+  "date": "2025-07-20T07:29:00.139Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 227,
+  "date": "2025-07-20T07:30:44.422Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 228,
+  "date": "2025-07-20T07:31:42.388Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 229,
+  "date": "2025-07-20T07:32:09.841Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 230,
+  "date": "2025-07-20T07:35:11.681Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 231,
+  "date": "2025-07-20T07:39:14.009Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 232,
+  "date": "2025-07-20T07:39:41.945Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 233,
+  "date": "2025-07-20T07:39:49.840Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 234,
+  "date": "2025-07-20T07:41:04.919Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 235,
+  "date": "2025-07-20T07:41:06.824Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 236,
+  "date": "2025-07-20T07:41:10.608Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 237,
+  "date": "2025-07-20T07:41:46.066Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 238,
+  "date": "2025-07-20T07:43:13.373Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 239,
+  "date": "2025-07-20T07:47:15.176Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 240,
+  "date": "2025-07-20T07:48:12.526Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 241,
+  "date": "2025-07-20T07:50:33.044Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 242,
+  "date": "2025-07-20T07:52:02.936Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 243,
+  "date": "2025-07-20T07:52:41.747Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 244,
+  "date": "2025-07-20T07:52:54.282Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 245,
+  "date": "2025-07-20T07:53:15.297Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 246,
+  "date": "2025-07-20T07:55:18.784Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 247,
+  "date": "2025-07-20T07:55:34.119Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 248,
+  "date": "2025-07-20T07:57:42.862Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 249,
+  "date": "2025-07-20T07:57:55.626Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 250,
+  "date": "2025-07-20T07:58:02.518Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 251,
+  "date": "2025-07-20T07:58:49.740Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 252,
+  "date": "2025-07-20T08:03:40.382Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 253,
+  "date": "2025-07-20T08:06:26.234Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 254,
+  "date": "2025-07-20T08:07:37.207Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 255,
+  "date": "2025-07-20T08:10:57.677Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 256,
+  "date": "2025-07-20T08:15:05.552Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 257,
+  "date": "2025-07-20T08:17:35.371Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 258,
+  "date": "2025-07-20T08:24:37.653Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 259,
+  "date": "2025-07-20T08:25:30.677Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 259,
+  "date": "2025-07-20T08:25:31.502Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 260,
+  "date": "2025-07-20T08:25:40.925Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 261,
+  "date": "2025-07-20T08:26:10.875Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 262,
+  "date": "2025-07-20T08:26:36.443Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 263,
+  "date": "2025-07-20T08:26:39.861Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 264,
+  "date": "2025-07-20T08:27:18.461Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 265,
+  "date": "2025-07-20T08:29:26.420Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 266,
+  "date": "2025-07-20T08:30:09.408Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 267,
+  "date": "2025-07-20T08:35:12.398Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 268,
+  "date": "2025-07-20T08:38:40.402Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 269,
+  "date": "2025-07-20T08:39:26.597Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 270,
+  "date": "2025-07-20T08:44:05.616Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 271,
+  "date": "2025-07-20T08:45:51.337Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 272,
+  "date": "2025-07-20T08:46:08.075Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 273,
+  "date": "2025-07-20T08:46:43.152Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 273,
+  "date": "2025-07-20T08:46:43.275Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 273,
+  "date": "2025-07-20T08:47:18.411Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 274,
+  "date": "2025-07-20T08:50:39.465Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 274,
+  "date": "2025-07-20T08:50:39.605Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 274,
+  "date": "2025-07-20T08:50:42.921Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 275,
+  "date": "2025-07-20T08:51:19.265Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 276,
+  "date": "2025-07-20T08:51:55.777Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 276,
+  "date": "2025-07-20T08:51:56.151Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 277,
+  "date": "2025-07-20T08:53:57.337Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 277,
+  "date": "2025-07-20T08:54:02.208Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 278,
+  "date": "2025-07-20T08:54:19.316Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 279,
+  "date": "2025-07-20T08:54:27.901Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 280,
+  "date": "2025-07-20T08:55:18.303Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 281,
+  "date": "2025-07-20T08:55:32.292Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 282,
+  "date": "2025-07-20T08:55:40.102Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 283,
+  "date": "2025-07-20T08:56:18.321Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 284,
+  "date": "2025-07-20T08:56:29.350Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 285,
+  "date": "2025-07-20T08:56:59.178Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 286,
+  "date": "2025-07-20T08:57:02.716Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 287,
+  "date": "2025-07-20T08:57:56.618Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 288,
+  "date": "2025-07-20T08:58:40.304Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 289,
+  "date": "2025-07-20T08:58:57.306Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 290,
+  "date": "2025-07-20T08:59:33.350Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 290,
+  "date": "2025-07-20T08:59:33.727Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 291,
+  "date": "2025-07-20T09:00:00.022Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 292,
+  "date": "2025-07-20T09:00:02.981Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 293,
+  "date": "2025-07-20T09:01:08.294Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 294,
+  "date": "2025-07-20T09:01:13.423Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 295,
+  "date": "2025-07-20T09:01:31.292Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 296,
+  "date": "2025-07-20T09:01:53.704Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 297,
+  "date": "2025-07-20T09:02:56.368Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 298,
+  "date": "2025-07-20T09:05:44.289Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 299,
+  "date": "2025-07-20T09:06:49.295Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 299,
+  "date": "2025-07-20T09:06:51.304Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 300,
+  "date": "2025-07-20T09:10:28.266Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 301,
+  "date": "2025-07-20T09:15:02.963Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 302,
+  "date": "2025-07-20T09:22:15.030Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 303,
+  "date": "2025-07-20T10:44:16.922Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 304,
+  "date": "2025-07-20T10:45:09.574Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 305,
+  "date": "2025-07-20T10:48:31.545Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 306,
+  "date": "2025-07-20T10:48:36.082Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 307,
+  "date": "2025-07-20T10:49:50.980Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 308,
+  "date": "2025-07-20T10:53:43.746Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 309,
+  "date": "2025-07-20T10:54:36.479Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 310,
+  "date": "2025-07-20T10:55:42.407Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 311,
+  "date": "2025-07-20T10:57:04.248Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 312,
+  "date": "2025-07-20T10:57:18.947Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 313,
+  "date": "2025-07-20T11:00:43.739Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 314,
+  "date": "2025-07-20T11:01:28.639Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 315,
+  "date": "2025-07-20T11:34:01.591Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411007,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 316,
+  "date": "2025-07-20T11:43:14.602Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 317,
+  "date": "2025-07-20T11:49:22.630Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411007,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 318,
+  "date": "2025-07-20T11:50:08.672Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411007,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 319,
+  "date": "2025-07-20T11:50:12.170Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411007,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 320,
+  "date": "2025-07-20T11:51:10.630Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411007,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 321,
+  "date": "2025-07-20T11:52:40.813Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 322,
+  "date": "2025-07-20T11:52:54.773Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 323,
+  "date": "2025-07-20T11:53:52.107Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411007,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 324,
+  "date": "2025-07-20T11:55:52.385Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411007,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 325,
+  "date": "2025-07-20T12:00:01.435Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 326,
+  "date": "2025-07-20T12:30:46.368Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 327,
+  "date": "2025-07-20T12:33:47.218Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 328,
+  "date": "2025-07-20T12:38:22.617Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 329,
+  "date": "2025-07-20T12:41:55.234Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 330,
+  "date": "2025-07-20T12:57:14.724Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411007,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 331,
+  "date": "2025-07-20T12:58:15.039Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 332,
+  "date": "2025-07-20T13:09:47.403Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411015,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 333,
+  "date": "2025-07-21T20:25:26.314Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411007,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 334,
+  "date": "2025-07-23T20:07:58.187Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411007,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 335,
+  "date": "2025-07-23T21:02:00.077Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411007,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 336,
+  "date": "2025-07-24T08:56:14.340Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411004,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 337,
+  "date": "2025-07-24T09:51:58.731Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411007,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 338,
+  "date": "2025-07-25T03:36:03.332Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411004,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 339,
+  "date": "2025-07-25T11:55:09.700Z",
+  "city": "Pune",
+  "lat": 18.5709,
+  "long": 74.0691,
+  "postal": 412305,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 340,
+  "date": "2025-07-25T14:09:02.132Z",
+  "city": "Nagpur",
+  "lat": 21.1463,
+  "long": 79.0849,
+  "postal": 440013,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 341,
+  "date": "2025-07-26T05:27:37.038Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411002,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 342,
+  "date": "2025-07-26T05:29:38.386Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411002,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 343,
+  "date": "2025-07-26T05:31:43.031Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411002,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 344,
+  "date": "2025-07-26T05:35:23.395Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411002,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 345,
+  "date": "2025-07-26T06:09:52.179Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411002,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 346,
+  "date": "2025-07-26T06:21:15.089Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411002,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 347,
+  "date": "2025-07-26T06:21:33.643Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411002,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 348,
+  "date": "2025-07-26T06:27:32.519Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411002,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 349,
+  "date": "2025-07-26T06:28:04.303Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411002,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 350,
+  "date": "2025-07-26T06:28:34.788Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411002,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 351,
+  "date": "2025-07-26T06:28:58.113Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411002,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 352,
+  "date": "2025-07-26T06:29:22.402Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411002,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 353,
+  "date": "2025-07-26T06:30:41.352Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411002,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 354,
+  "date": "2025-07-26T06:31:09.459Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411002,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 355,
+  "date": "2025-07-26T06:31:45.587Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411002,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 356,
+  "date": "2025-07-26T06:32:29.284Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411002,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 357,
+  "date": "2025-07-26T06:33:08.299Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411002,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 358,
+  "date": "2025-07-26T06:33:20.465Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411002,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 359,
+  "date": "2025-07-26T06:37:30.368Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411002,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 360,
+  "date": "2025-07-26T06:37:45.073Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411002,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 361,
+  "date": "2025-07-26T06:37:55.485Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411002,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 362,
+  "date": "2025-07-26T06:38:01.130Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411002,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 363,
+  "date": "2025-07-26T06:38:15.056Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411002,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 364,
+  "date": "2025-07-26T06:40:49.753Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411002,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 365,
+  "date": "2025-07-26T06:41:07.851Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411002,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 366,
+  "date": "2025-07-26T06:41:18.800Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411002,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 367,
+  "date": "2025-07-26T06:41:34.803Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411002,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 368,
+  "date": "2025-07-26T06:41:44.493Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411002,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 369,
+  "date": "2025-07-26T06:41:52.917Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411002,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 370,
+  "date": "2025-07-26T06:42:03.160Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411002,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 371,
+  "date": "2025-07-26T06:42:12.530Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411002,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 372,
+  "date": "2025-07-26T06:42:23.645Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411002,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 373,
+  "date": "2025-07-26T06:42:32.291Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411002,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 374,
+  "date": "2025-07-26T06:42:44.498Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411002,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 375,
+  "date": "2025-07-26T06:42:54.351Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411002,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 376,
+  "date": "2025-07-26T06:43:09.944Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411002,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 377,
+  "date": "2025-07-26T06:44:09.885Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411002,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 378,
+  "date": "2025-07-26T06:44:31.067Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411002,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 379,
+  "date": "2025-07-26T06:44:41.901Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411002,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 380,
+  "date": "2025-07-26T06:44:50.282Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411002,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 381,
+  "date": "2025-07-26T06:45:01.332Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411002,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 382,
+  "date": "2025-07-26T06:45:17.210Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411002,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 383,
+  "date": "2025-07-26T06:45:34.580Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411002,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 384,
+  "date": "2025-07-26T06:46:06.351Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411002,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 385,
+  "date": "2025-07-26T06:46:17.664Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411002,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 386,
+  "date": "2025-07-26T06:46:40.888Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411002,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 387,
+  "date": "2025-07-26T06:48:43.334Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411002,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 388,
+  "date": "2025-07-26T06:49:12.513Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411002,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 389,
+  "date": "2025-07-26T06:49:23.671Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411002,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 390,
+  "date": "2025-07-26T06:49:56.892Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411002,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 391,
+  "date": "2025-07-26T06:50:12.209Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411002,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 392,
+  "date": "2025-07-26T06:50:48.882Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411002,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 393,
+  "date": "2025-07-26T06:51:07.916Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411002,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 394,
+  "date": "2025-07-26T06:51:21.619Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411002,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 395,
+  "date": "2025-07-26T06:52:27.669Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411002,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 396,
+  "date": "2025-07-26T06:57:42.937Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411002,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 397,
+  "date": "2025-07-26T06:57:54.445Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411002,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 398,
+  "date": "2025-07-26T06:59:27.503Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411002,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 399,
+  "date": "2025-07-26T07:00:20.984Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411002,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 400,
+  "date": "2025-07-26T07:00:33.555Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411002,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 401,
+  "date": "2025-07-26T07:00:58.398Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411002,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 402,
+  "date": "2025-07-26T07:01:10.588Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411002,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 403,
+  "date": "2025-07-26T07:01:36.310Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411002,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 404,
+  "date": "2025-07-26T07:01:51.750Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411002,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 405,
+  "date": "2025-07-26T07:02:11.603Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411002,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 406,
+  "date": "2025-07-26T07:02:24.541Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411002,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 407,
+  "date": "2025-07-26T07:02:43.391Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411002,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 408,
+  "date": "2025-07-26T07:03:03.112Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411002,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 409,
+  "date": "2025-07-26T07:03:34.030Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411002,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 410,
+  "date": "2025-07-26T07:03:51.203Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411002,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 411,
+  "date": "2025-07-26T07:04:16.933Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411002,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 412,
+  "date": "2025-07-26T07:04:27.311Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411002,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 413,
+  "date": "2025-07-26T07:04:34.629Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411002,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 414,
+  "date": "2025-07-26T07:04:45.202Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411002,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 415,
+  "date": "2025-07-26T07:04:57.723Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411002,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 416,
+  "date": "2025-07-26T07:05:30.964Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411002,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 417,
+  "date": "2025-07-26T07:05:43.646Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411002,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 418,
+  "date": "2025-07-26T07:06:08.440Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411002,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 419,
+  "date": "2025-07-26T07:06:53.483Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411002,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 420,
+  "date": "2025-07-26T07:07:06.806Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411002,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 421,
+  "date": "2025-07-26T07:07:18.605Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411002,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 422,
+  "date": "2025-07-26T07:07:29.880Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411002,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 423,
+  "date": "2025-07-26T07:07:49.365Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411002,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 424,
+  "date": "2025-07-26T07:09:53.767Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411002,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 425,
+  "date": "2025-07-26T07:10:17.453Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411002,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 426,
+  "date": "2025-07-26T07:10:49.400Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411002,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 427,
+  "date": "2025-07-26T07:11:13.893Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411002,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 428,
+  "date": "2025-07-26T07:11:21.821Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411002,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 429,
+  "date": "2025-07-26T07:11:37.328Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411002,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 430,
+  "date": "2025-07-26T07:12:09.443Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411002,
+  "state": "Maharashtra",
+  "country": "India"
+ },
+ {
+  "id": 431,
+  "date": "2025-07-26T07:12:33.701Z",
+  "city": "Pune",
+  "lat": 18.5211,
+  "long": 73.8502,
+  "postal": 411002,
+  "state": "Maharashtra",
+  "country": "India"
+ }
+]
