@@ -24,8 +24,7 @@ const ProfileVisitCounter = () => {
         const now = new Date();
 
 
-        // fetch('https://sheetdb.io/api/v1/0byzew43sn0jh')
-        fetch('/Portfolio/portfolio.json')
+        fetch('https://sheetdb.io/api/v1/0byzew43sn0jh')
             .then((response) => response.json())
             .then(async (visitData) => {
 
@@ -77,7 +76,7 @@ const ProfileVisitCounter = () => {
                     country: country
 
                 }
-                // await add(params);
+                await add(params);
                 const oneDayAgo = new Date(now);
                 oneDayAgo.setDate(now.getDate() - 1);
 
