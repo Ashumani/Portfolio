@@ -52,19 +52,18 @@ const ProfileVisitCounter = () => {
                 let latitude = 0
                 let longitude = 0
                 let pincode = 0
-                await axios.get('https://ipapi.co/json/')
-                    .then(response => {
-                        ct = response.data.city;
-                        latitude = response.data.latitude
-                        longitude = response.data.longitude
-                        pincode = response.data.postal
-                        state = response.data.region
-                        country = response.data.country_name
-                    })
-                    .catch(error => {
-                        console.error('Error fetching location:', error);
-                    });
-                // console.log("email : ", email)
+                // await axios.get('https://ipapi.co/json/')
+                //     .then(response => {
+                //         ct = response.data.city;
+                //         latitude = response.data.latitude
+                //         longitude = response.data.longitude
+                //         pincode = response.data.postal
+                //         state = response.data.region
+                //         country = response.data.country_name
+                //     })
+                //     .catch(error => {
+                //         console.error('Error fetching location:', error);
+                //     });
 
                 let params = {
                     id: maxId + 1,
