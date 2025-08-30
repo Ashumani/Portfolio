@@ -78,7 +78,12 @@ const ProfileVisitCounter = () => {
                     country: country
 
                 }
-                await addDataToSheet(params);
+                try{
+                    await addDataToSheet(params);
+                }catch(er){
+                    console.log(er.message)
+                }
+               
                 const oneDayAgo = new Date(now);
                 oneDayAgo.setDate(now.getDate() - 1);
 
