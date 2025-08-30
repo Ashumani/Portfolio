@@ -20,12 +20,14 @@ const ProfileVisitCounter = () => {
     const [bar2key, setBar2key] = useState([])
     const [bar2value, setBar2Value] = useState([])
 
+    const WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbzYjTAuIgmCK4vV4ppkaUC-9j1zIUFbeYGZ_UCN7FN3bYTeTJOKMY_CNiQIFj7ktmqEfA/exec';
+
     useEffect(() => {
         const now = new Date();
 
 
-        // fetch('https://sheetdb.io/api/v1/0byzew43sn0jh')
-        fetch('/Portfolio/portfolio.json')
+        fetch(WEB_APP_URL)
+            // fetch('/Portfolio/portfolio.json')
             .then((response) => response.json())
             .then(async (visitData) => {
 
@@ -52,18 +54,18 @@ const ProfileVisitCounter = () => {
                 let latitude = 0
                 let longitude = 0
                 let pincode = 0
-                // await axios.get('https://ipapi.co/json/')
-                //     .then(response => {
-                //         ct = response.data.city;
-                //         latitude = response.data.latitude
-                //         longitude = response.data.longitude
-                //         pincode = response.data.postal
-                //         state = response.data.region
-                //         country = response.data.country_name
-                //     })
-                //     .catch(error => {
-                //         console.error('Error fetching location:', error);
-                //     });
+                await axios.get('https://ipapi.co/json/')
+                    .then(response => {
+                        ct = response.data.city;
+                        latitude = response.data.latitude
+                        longitude = response.data.longitude
+                        pincode = response.data.postal
+                        state = response.data.region
+                        country = response.data.country_name
+                    })
+                    .catch(error => {
+                        console.error('Error fetching location:', error);
+                    });
 
                 let params = {
                     id: maxId + 1,
@@ -76,7 +78,7 @@ const ProfileVisitCounter = () => {
                     country: country
 
                 }
-                // await add(params);
+                await addDataToSheet(params);
                 const oneDayAgo = new Date(now);
                 oneDayAgo.setDate(now.getDate() - 1);
 
@@ -92,7 +94,7 @@ const ProfileVisitCounter = () => {
                 const monthly = visitData.filter(item => new Date(item.date) > oneMonthAgo).length;
                 const total = visitData.length;
 
-                setBar2key(["Total", "Monthly","weekly","daily"])
+                setBar2key(["Total", "Monthly", "weekly", "daily"])
                 setBar2Value([total, monthly, weekly, daily])
                 setDailyCount(daily);
                 setWeeklyCount(weekly);
@@ -120,19 +122,34 @@ const ProfileVisitCounter = () => {
             })
         })
     }
+    // Replace with the URL from your Apps Script web app deployment.
+    // This is the URL you get after deploying the script with access set to "Anyone".
 
-    const add = (params) => {
-        fetch('https://sheetdb.io/api/v1/0byzew43sn0jh', {
-            method: 'POST',
+    // const addDataToSheet = (dataParams) => {
+    //     fetch(WEB_APP_URL, {
+    //         method: 'POST',
+    //         headers: {
+    //             'Content-Type': 'application/json'
+    //         },
+    //         body: JSON.stringify(dataParams)
+    //     })
+           
+    // };
+
+const addDataToSheet = async (dataParams) => {
+    try {
+        const response = await axios.post(WEB_APP_URL, dataParams, {
             headers: {
-                'Accept': 'application/json',
                 'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({
-                data: params
-            })
-        })
+            }
+        });
+        return response.data;
+    } catch (error) {
+        // You might need to adjust this depending on the actual error structure.
+        console.error("Error posting data:", error.response?.data || error.message);
+        throw error;
     }
+};
     const getCity = () => {
         axios.get('https://ipapi.co/json/')
             .then(response => {
@@ -180,17 +197,17 @@ const ProfileVisitCounter = () => {
                 </div>
             </div>
             {cities.length > 1 ? (
-    <div className="flex flex-wrap justify-center gap-8 px-4 py-6">
-      <div className="w-full md:w-[48%]">
-        <BarChart label={cities} dataSet={counts} />
-      </div>
-      <div className="w-full md:w-[48%]">
-        <BarChart label={bar2key} dataSet={bar2value} />
-      </div>
-    </div>
-  ) : (
-    <div></div>
-  )}
+                <div className="flex flex-wrap justify-center gap-8 px-4 py-6">
+                    <div className="w-full md:w-[48%]">
+                        <BarChart label={cities} dataSet={counts} />
+                    </div>
+                    <div className="w-full md:w-[48%]">
+                        <BarChart label={bar2key} dataSet={bar2value} />
+                    </div>
+                </div>
+            ) : (
+                <div></div>
+            )}
 
             {/* 
             {showForm ? (
