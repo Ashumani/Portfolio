@@ -20,13 +20,14 @@ const ProfileVisitCounter = () => {
     const [bar2key, setBar2key] = useState([])
     const [bar2value, setBar2Value] = useState([])
 
-    const WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbzYjTAuIgmCK4vV4ppkaUC-9j1zIUFbeYGZ_UCN7FN3bYTeTJOKMY_CNiQIFj7ktmqEfA/exec';
+    const WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbyVofE7rPPS7enQJR8NvUF6Nw3IUmVcEFrSKTcYhe1b-ePHka10OB_hCcfkjMkuYtMP5w/exec';
+    const WEB_APP_URL_GT = 'https://script.google.com/macros/s/AKfycbzYjTAuIgmCK4vV4ppkaUC-9j1zIUFbeYGZ_UCN7FN3bYTeTJOKMY_CNiQIFj7ktmqEfA/exec';
 
     useEffect(() => {
         const now = new Date();
 
 
-        fetch(WEB_APP_URL)
+        fetch(WEB_APP_URL_GT)
             // fetch('/Portfolio/portfolio.json')
             .then((response) => response.json())
             .then(async (visitData) => {
@@ -141,20 +142,28 @@ const ProfileVisitCounter = () => {
            
     // };
 
-const addDataToSheet = async (dataParams) => {
-    try {
-        const response = await axios.post(WEB_APP_URL, dataParams, {
-            headers: {
-                'Content-Type': 'application/json'
-            }
-        });
-        return response.data;
-    } catch (error) {
-        // You might need to adjust this depending on the actual error structure.
-        console.error("Error posting data:", error.response?.data || error.message);
-        throw error;
-    }
-};
+    const addDataToSheet = async (dataParams) => {
+        try {
+            // Use fetch instead of axios for better compatibility with Google Apps Script
+            const response = await fetch(WEB_APP_URL, {
+                method: 'POST',
+                mode: 'no-cors', // Important for Google Apps Script
+                headers: {
+                    'Content-Type': 'text/plain', // Changed from application/json
+                },
+                body: JSON.stringify(dataParams)
+            });
+            
+            // Note: With mode: 'no-cors', you won't be able to read the response
+            // but the request will succeed
+            console.log('Data sent successfully');
+            return { status: 'success' };
+        } catch (error) {
+            console.error("Error posting data:", error.message);
+            throw error;
+        }
+    };
+    
     const getCity = () => {
         axios.get('https://ipapi.co/json/')
             .then(response => {
