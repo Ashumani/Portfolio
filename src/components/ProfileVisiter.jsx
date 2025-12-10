@@ -4,6 +4,9 @@ import { styles } from "../styles";
 import { fadeIn, textVariant } from "../utils/motion";
 import axios from 'axios';
 import BarChart from './chart/barchart';
+import PieChart from './chart/piechart';
+import { object } from 'framer-motion/client';
+
 
 const ProfileVisitCounter = () => {
     const [dailyCount, setDailyCount] = useState(0);
@@ -17,9 +20,17 @@ const ProfileVisitCounter = () => {
     const [email, setEmail] = useState('');
     const [counts, setCounts] = useState([])
     const [cities, setCities] = useState([])
+    const [pincode, setPinCode] = useState([])
+    const [pincountLast30, setPinCountLast30] = useState([])
+    const [pincodeLast30, setPinCodeLast30] = useState([])
+    const [pincount, setPinCount] = useState([])
+    
     const [bar2key, setBar2key] = useState([])
     const [bar2value, setBar2Value] = useState([])
-
+    const [pieData, setPieData] = useState({
+        labels: [],
+        datasets: [],
+    });
     const WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbyVofE7rPPS7enQJR8NvUF6Nw3IUmVcEFrSKTcYhe1b-ePHka10OB_hCcfkjMkuYtMP5w/exec';
     const WEB_APP_URL_GT = 'https://script.google.com/macros/s/AKfycbzYjTAuIgmCK4vV4ppkaUC-9j1zIUFbeYGZ_UCN7FN3bYTeTJOKMY_CNiQIFj7ktmqEfA/exec';
 
@@ -45,10 +56,57 @@ const ProfileVisitCounter = () => {
                     return acc;
                 }, {});
 
+
+                // Filter the data for visits that occurred on or after the cutoff date
+                const recentVisits = visitData.filter(visit => {
+
+                    // Calculate the Cutoff Date (30 days ago)
+                    const thirtyDaysAgo = new Date();
+                    // Subtract 30 days in milliseconds (30 * 24 * 60 * 60 * 1000)
+                    thirtyDaysAgo.setDate(thirtyDaysAgo.getDate() - 30);
+                    // Convert the cutoff date to a comparable timestamp (milliseconds since epoch)
+                    const thirtyDaysAgoTime = thirtyDaysAgo.getTime();
+                    // Convert the visit's ISO date string to a Date object and get its timestamp
+                    const visitTime = new Date(visit.date).getTime();
+
+                    // Return true if the visit occurred 30 days ago or more recently
+                    return visitTime >= thirtyDaysAgoTime;
+                });
+                const pinCountLast30 = recentVisits.reduce((acc, curr) => {
+                    const pincode = curr.postal;
+                    const city = curr.city
+                    const key = pincode + " - " + city
+                    if (acc[key]) {
+
+                        acc[key] += 1;
+                    } else {
+                        acc[key] = 1;
+                    }
+                    return acc;
+                }, {});
+
+                const pinCount = visitData.reduce((acc, curr) => {
+                    const pincode = curr.postal;
+                    const city = curr.city
+                    const key = pincode + " - " + city
+                    if (acc[key]) {
+
+                        acc[key] += 1;
+                    } else {
+                        acc[key] = 1;
+                    }
+                    return acc;
+                }, {});
+                // alert(JSON.stringify(pinCount))
+                setPinCodeLast30(Object.keys(pinCountLast30))
+                setPinCountLast30(Object.values(pinCountLast30))
+                
+                setPinCode(Object.keys(pinCount))
+                setPinCount(Object.values(pinCount))
                 setCounts(Object.values(cityCount));        // ['Pune', 'Mumbai', 'Delhi']
                 setCities(Object.keys(cityCount));
 
-
+                const browserInfo = getBrowserDetails();
                 let state = ''
                 let country = ''
                 let ct = ''
@@ -70,21 +128,23 @@ const ProfileVisitCounter = () => {
 
                 let params = {
                     id: maxId + 1,
-                    date: now.toISOString(),
+                    date: new Date().toISOString(),
                     city: ct,
                     lat: latitude,
                     long: longitude,
                     postal: pincode,
                     state: state,
-                    country: country
+                    country: country,
+                    currentPage: window.location.pathname,
+                    userAgent: browserInfo.userAgent
 
                 }
-                try{
+                try {
                     await addDataToSheet(params);
-                }catch(er){
+                } catch (er) {
                     console.log(er.message)
                 }
-               
+
                 const oneDayAgo = new Date(now);
                 oneDayAgo.setDate(now.getDate() - 1);
 
@@ -107,11 +167,47 @@ const ProfileVisitCounter = () => {
                 setMonthlyCount(monthly);
                 setTotalCount(total);
                 setVisitCity(uniqueCities);
+                setPieData({
+                    // These are the labels for each slice (shown in the tooltip and legend)
+                    labels: Object.keys(cityCount),
+
+                    datasets: [
+                        {
+                            label: '# of Votes', // Label shown in the tooltip
+                            data: Object.values(cityCount), // The actual values for each slice
+                            backgroundColor: [ // The background color for each slice
+                                'rgba(255, 99, 132, 0.6)', // Red
+                                'rgba(54, 162, 235, 0.6)', // Blue
+                                'rgba(255, 206, 86, 0.6)', // Yellow
+                                'rgba(75, 192, 192, 0.6)', // Green
+                                'rgba(153, 102, 255, 0.6)', // Purple
+                            ],
+                            borderColor: [
+                                'rgba(255, 99, 132, 1)',
+                                'rgba(54, 162, 235, 1)',
+                                // ... (etc.)
+                            ],
+                            borderWidth: 1,
+                        },
+                    ],
+                })
+
             }
             );
 
     }, []);
 
+    const getBrowserDetails = () => {
+        return {
+            userAgent: navigator.userAgent,
+            language: navigator.language,
+            languages: navigator.languages.join(', '),
+            platform: navigator.platform,
+            screenWidth: window.screen.width,
+            screenHeight: window.screen.height,
+            devicePixelRatio: window.devicePixelRatio,
+        };
+    };
     const update = (id, date, city) => {
         fetch('https://sheetdb.io/api/v1/58f61be4dda40/id/' + id, {
             method: 'PATCH',
@@ -139,8 +235,17 @@ const ProfileVisitCounter = () => {
     //         },
     //         body: JSON.stringify(dataParams)
     //     })
-           
+
     // };
+
+    // const visitorExpolre = async () =>{
+    //     try {
+    //         await useEffect()
+    //     } catch (error) {
+    //         console.error("Error posting data:", error.message);
+    //         throw error;
+    //     }
+    // }
 
     const addDataToSheet = async (dataParams) => {
         try {
@@ -153,7 +258,7 @@ const ProfileVisitCounter = () => {
                 },
                 body: JSON.stringify(dataParams)
             });
-            
+
             // Note: With mode: 'no-cors', you won't be able to read the response
             // but the request will succeed
             console.log('Data sent successfully');
@@ -163,7 +268,7 @@ const ProfileVisitCounter = () => {
             throw error;
         }
     };
-    
+
     const getCity = () => {
         axios.get('https://ipapi.co/json/')
             .then(response => {
@@ -211,14 +316,27 @@ const ProfileVisitCounter = () => {
                 </div>
             </div>
             {cities.length > 1 ? (
-                <div className="flex flex-wrap justify-center gap-8 px-4 py-6">
-                    <div className="w-full md:w-[48%]">
-                        <BarChart label={cities} dataSet={counts} />
+
+                <div>
+                    <div className="flex flex-wrap justify-center gap-8 px-4 py-6">
+
+                        <div className="w-full md:w-[48%]">
+                            <PieChart chartData={pieData} />
+                        </div><div className="w-full md:w-[48%]">
+                            <BarChart label={bar2key} dataSet={bar2value} />
+                        </div>
+
                     </div>
-                    <div className="w-full md:w-[48%]">
-                        <BarChart label={bar2key} dataSet={bar2value} />
+                    <div className="flex flex-wrap justify-center gap-8 px-4 py-6">
+                        <div className="w-full md:w-[48%]">
+                            <BarChart label={pincode} dataSet={pincount} />
+                        </div>
+                        <div className="w-full md:w-[48%]">
+                            <BarChart label={pincodeLast30} dataSet={pincountLast30} />
+                        </div>
                     </div>
                 </div>
+
             ) : (
                 <div></div>
             )}
