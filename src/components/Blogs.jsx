@@ -2,22 +2,26 @@ import React from "react";
 import { Tilt } from 'react-tilt';
 
 import { motion } from "framer-motion";
-
+import { useNavigate } from 'react-router-dom';
 import { styles } from "../styles";
 import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
+import { mockBlogPosts } from "../constants/BlogData";
 
-const ProjectCard = ({
-  index,
-  name,
-  description,
-  tags,
-  image,
-  source_code_link,
+const BlogCard = ({
+  id,
+  title,
+  summary,
+  author,
+  date,
+  imageUrl,
+  routeTo,
+  tags
 }) => {
+  const navigate = useNavigate();
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+    <motion.div variants={fadeIn("up", "spring", id * 0.5, 0.75)}>
       <Tilt
         options={{
           max: 45,
@@ -28,14 +32,16 @@ const ProjectCard = ({
       >
         <div className='relative w-full h-[230px]'>
           <img
-            src={image}
-            alt='project_image'
+            src={imageUrl}
+            alt='blog_image'
             className='w-full h-full object-cover rounded-2xl'
+            // onClick={() => window.open(routeTo, "_blank")}
+           
           />
 
           <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
             <div
-              onClick={() => window.open(source_code_link, "_blank")}
+              onClick={() => window.open(routeTo, "_blank")}
               className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
             >
               <img
@@ -48,8 +54,8 @@ const ProjectCard = ({
         </div>
 
         <div className='mt-5'>
-          <h3 className='text-white font-bold text-[24px]'>{name}</h3>
-          <p className='mt-2 text-secondary text-[14px]'>{description}</p>
+          <h3 className='text-white font-bold text-[24px]'>{title}</h3>
+          <p className='mt-2 text-secondary text-[14px]'>{summary}</p>
         </div>
 
         <div className='mt-4 flex flex-wrap gap-2'>
@@ -80,19 +86,16 @@ const Blogs = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
         >
-         Gain insights into my problem-solving approach and technical skills through my collection of blog posts. 
-          These articles provide practical examples of my work, complete with code repositories and live demos.  
-         Discover how I leverage [mention key technologies/areas] to build effective solutions and manage projects successfully.
+          Gain insights into my problem-solving approach and technical skills through my collection of blog posts.
+          These articles provide practical examples of my work, complete with code repositories and live demos.
+          Discover how I leverage [mention key technologies/areas] to build effective solutions and manage projects successfully.
         </motion.p>
       </div>
       <div className='mt-20 flex flex-wrap gap-7'>
-        Comming Soon
-      </div>
-      {/* <div className='mt-20 flex flex-wrap gap-7'>
-        {projects.map((project, index) => (
-          <ProjectCard key={`project-${index}`} index={index} {...project} />
+        {mockBlogPosts.map((project, index) => (
+          <BlogCard key={`project-${index}`} index={index} {...project} />
         ))}
-      </div> */}
+      </div>
     </>
   );
 };

@@ -1,11 +1,11 @@
 import {Routes,Route} from "react-router-dom"
-import BlogsView from './components/BlogsView'
+import BlogsPage from './pages/Blogs'
 
 
 const AllRoutes = () => {
   return (
     <Routes>
-     <Route exact path='/blogsview' Component={BlogsView}/>
+     <Route exact path='/blogsview' Component={BlogsPage}/>
         
     </Routes>
     
