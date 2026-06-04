@@ -165,7 +165,7 @@ const technologies = [
 const experiences = [
   {
     title: "Apisix / AgenticAI Developer",
-    company_name: "Eclerx",
+    company_name: "Associate Process Manager @ Eclerx",
     icon: eclerx,
     iconBg: "#fefefe",
     date: "May-2026 - Present",
@@ -182,7 +182,7 @@ const experiences = [
     ],
   },{
     title: "Apigee Developer",
-    company_name: "Bitwise",
+    company_name: "System Analyst @ Bitwise",
     icon: bitwise_inc_logo,
     iconBg: "#da2a1b",
     date: "June 2025 - till date",
@@ -198,7 +198,7 @@ const experiences = [
   
   {
     title: "Apigee Developer",
-    company_name: "Cognizant",
+    company_name: "Project Associate @ Cognizant",
     icon: cognizant,
     iconBg: "#E6DEDD",
     date: "January 2024 - May-2025",
@@ -212,7 +212,7 @@ const experiences = [
   },
   {
     title: "Apigee Developer | Layer 7 Developer | Node JS Developer",
-    company_name: "Velociter",
+    company_name: "Senior Developer @ Velociter",
     icon: velociter,
     iconBg: "#383E56",
     date: "Jun 2020 - Dec 2023",
@@ -225,7 +225,7 @@ const experiences = [
   },
   {
     title: "Node JS Developer",
-    company_name: "Velociter",
+    company_name: "Senior Develoepr @ Velociter",
     icon: velociter,
     iconBg: "#383E56",
     date: "Jun 2020 - Dec 2023",
@@ -238,7 +238,7 @@ const experiences = [
   },
   {
     title: "Full stack Internship",
-    company_name: "WebQuadra",
+    company_name: "Intern @ WebQuadra",
     icon: webquadra,
     iconBg: "#164453",
     date: "June 2019 - Mar-2020",
