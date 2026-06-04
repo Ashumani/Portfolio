@@ -25,6 +25,7 @@ import {
   tesla,
   shopify,
   cognizant,
+  eclerx,
   bitwise_inc_logo,
   velociter,
   webquadra,
@@ -62,7 +63,8 @@ const services = [
     icon: web,
     afterFlipped: [
       "Apigee",
-      "Layer 7"
+      "Layer 7",
+      "APISIX"
     ]
   },
   {
@@ -162,6 +164,23 @@ const technologies = [
 
 const experiences = [
   {
+    title: "Apisix / AgenticAI Developer",
+    company_name: "Eclerx",
+    icon: eclerx,
+    iconBg: "#fefefe",
+    date: "May-2026 - Present",
+    points: [
+    "Working on Apache APISIX API Gateway and its setup from scratch.",
+
+    "Developing APIs and routes for Agentic AI and LLM integrations.",
+
+    "Developing on smart AI agents and AI-driven automation workflows.",
+
+    "Creating Grafana dashboards and monitoring reports.",
+
+    "Managing deployments and services on Google Cloud Platform (GCP).",
+    ],
+  },{
     title: "Apigee Developer",
     company_name: "Bitwise",
     icon: bitwise_inc_logo,

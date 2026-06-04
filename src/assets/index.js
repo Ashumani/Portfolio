@@ -37,6 +37,7 @@ import cognizant from "./company/cognizant.svg";
 import velociter from "./company/velociter.png";
 import webquadra from "./company/webquadra.png";
 import bitwise_inc_logo from "./company/bitwise_inc_logo.png"
+import eclerx from "./company/eclerx.avif"
 
 
 import carrent from "./carrent.png";
@@ -82,6 +83,7 @@ export {
   cognizant,
   bitwise_inc_logo,
   velociter,
+  eclerx,
   webquadra,
   carrent,
   jobit,

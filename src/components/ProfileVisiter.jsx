@@ -24,9 +24,12 @@ const ProfileVisitCounter = () => {
     const [pincountLast30, setPinCountLast30] = useState([])
     const [pincodeLast30, setPinCodeLast30] = useState([])
     const [pincount, setPinCount] = useState([])
-    
+    const showpassword = "show"
     const [bar2key, setBar2key] = useState([])
     const [bar2value, setBar2Value] = useState([])
+    const [showModal, setShowModal] = useState(false);
+    const [password, setPassword] = useState("");
+
     const [pieData, setPieData] = useState({
         labels: [],
         datasets: [],
@@ -100,7 +103,7 @@ const ProfileVisitCounter = () => {
                 // alert(JSON.stringify(pinCount))
                 setPinCodeLast30(Object.keys(pinCountLast30))
                 setPinCountLast30(Object.values(pinCountLast30))
-                
+
                 setPinCode(Object.keys(pinCount))
                 setPinCount(Object.values(pinCount))
                 setCounts(Object.values(cityCount));        // ['Pune', 'Mumbai', 'Delhi']
@@ -197,151 +200,177 @@ const ProfileVisitCounter = () => {
 
     }, []);
 
-    const getBrowserDetails = () => {
-        return {
-            userAgent: navigator.userAgent,
-            language: navigator.language,
-            languages: navigator.languages.join(', '),
-            platform: navigator.platform,
-            screenWidth: window.screen.width,
-            screenHeight: window.screen.height,
-            devicePixelRatio: window.devicePixelRatio,
-        };
+
+    
+const handleSubmit = () => {
+    console.log("Password:", password);
+
+    // Validate password here
+    // If correct, fetch/show details
+
+    setShowModal(false);
+    setPassword(password);
+};
+
+const getBrowserDetails = () => {
+    return {
+        userAgent: navigator.userAgent,
+        language: navigator.language,
+        languages: navigator.languages.join(', '),
+        platform: navigator.platform,
+        screenWidth: window.screen.width,
+        screenHeight: window.screen.height,
+        devicePixelRatio: window.devicePixelRatio,
     };
-    const update = (id, date, city) => {
-        fetch('https://sheetdb.io/api/v1/58f61be4dda40/id/' + id, {
-            method: 'PATCH',
-            headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({
-                data: {
-                    id: id,
-                    date: date,
-                    city: city
-                }
-            })
+};
+const update = (id, date, city) => {
+    fetch('https://sheetdb.io/api/v1/58f61be4dda40/id/' + id, {
+        method: 'PATCH',
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            data: {
+                id: id,
+                date: date,
+                city: city
+            }
         })
+    })
+}
+// Replace with the URL from your Apps Script web app deployment.
+// This is the URL you get after deploying the script with access set to "Anyone".
+
+// const addDataToSheet = (dataParams) => {
+//     fetch(WEB_APP_URL, {
+//         method: 'POST',
+//         headers: {
+//             'Content-Type': 'application/json'
+//         },
+//         body: JSON.stringify(dataParams)
+//     })
+
+// };
+
+// const visitorExpolre = async () =>{
+//     try {
+//         await useEffect()
+//     } catch (error) {
+//         console.error("Error posting data:", error.message);
+//         throw error;
+//     }
+// }
+
+const addDataToSheet = async (dataParams) => {
+    try {
+        // Use fetch instead of axios for better compatibility with Google Apps Script
+        const response = await fetch(WEB_APP_URL, {
+            method: 'POST',
+            mode: 'no-cors', // Important for Google Apps Script
+            headers: {
+                'Content-Type': 'text/plain', // Changed from application/json
+            },
+            body: JSON.stringify(dataParams)
+        });
+
+        // Note: With mode: 'no-cors', you won't be able to read the response
+        // but the request will succeed
+        console.log('Data sent successfully');
+        return { status: 'success' };
+    } catch (error) {
+        console.error("Error posting data:", error.message);
+        throw error;
     }
-    // Replace with the URL from your Apps Script web app deployment.
-    // This is the URL you get after deploying the script with access set to "Anyone".
+};
 
-    // const addDataToSheet = (dataParams) => {
-    //     fetch(WEB_APP_URL, {
-    //         method: 'POST',
-    //         headers: {
-    //             'Content-Type': 'application/json'
-    //         },
-    //         body: JSON.stringify(dataParams)
-    //     })
+const getCity = () => {
+    axios.get('https://ipapi.co/json/')
+        .then(response => {
+            setCity(response.data.city);
+            return response.data.city;
+        })
+        .catch(error => {
+            console.error('Error fetching location:', error);
+        });
 
-    // };
+}
+return (
+    <>
+        <motion.div variants={textVariant()}>
+            <p className={`${styles.sectionSubText} text-center`}>
+                People visited to Portfolio
+            </p>
+            <h2 className={`${styles.sectionHeadText} text-center`}>
+                Visitor Insights
+            </h2>
+        </motion.div>
+        <div className="flex flex-wrap gap-4 justify-center p-4">
 
-    // const visitorExpolre = async () =>{
-    //     try {
-    //         await useEffect()
-    //     } catch (error) {
-    //         console.error("Error posting data:", error.message);
-    //         throw error;
-    //     }
-    // }
-
-    const addDataToSheet = async (dataParams) => {
-        try {
-            // Use fetch instead of axios for better compatibility with Google Apps Script
-            const response = await fetch(WEB_APP_URL, {
-                method: 'POST',
-                mode: 'no-cors', // Important for Google Apps Script
-                headers: {
-                    'Content-Type': 'text/plain', // Changed from application/json
-                },
-                body: JSON.stringify(dataParams)
-            });
-
-            // Note: With mode: 'no-cors', you won't be able to read the response
-            // but the request will succeed
-            console.log('Data sent successfully');
-            return { status: 'success' };
-        } catch (error) {
-            console.error("Error posting data:", error.message);
-            throw error;
-        }
-    };
-
-    const getCity = () => {
-        axios.get('https://ipapi.co/json/')
-            .then(response => {
-                setCity(response.data.city);
-                return response.data.city;
-            })
-            .catch(error => {
-                console.error('Error fetching location:', error);
-            });
-
-    }
-    return (
-        <>
-            <motion.div variants={textVariant()}>
-                <p className={`${styles.sectionSubText} text-center`}>
-                    People visited to Portfolio
-                </p>
-                <h2 className={`${styles.sectionHeadText} text-center`}>
-                    Visitor Insights
-                </h2>
-            </motion.div>
-            <div className="flex flex-wrap gap-4 justify-center p-4">
-
-                <div className="flex justify-center items-center text-center text-white bg-gray-800 rounded-[20px] p-5">
-                    <h4 className="text-lg font-semibold ">Total Visits : &nbsp;  </h4>
-                    <p className=" text-2xl font-bold text-blue-600">{totalCount}</p>
-                </div>
-                <div className="flex justify-center items-center text-center text-white bg-gray-800 rounded-[20px] p-5">
-                    <h4 className="text-lg font-semibold">Monthly Visits :&nbsp; </h4>
-                    <p className="text-2xl font-bold text-purple-600">{monthlyCount}</p>
-                </div>
-                <div className="flex justify-center items-center text-center text-white bg-gray-800 rounded-[20px] p-5">
-                    <h4 className="text-lg font-semibold">Weekly Visits : &nbsp; </h4>
-                    <p className="text-2xl font-bold text-green-600">{weeklyCount}</p>
-                </div>
-                <div className="flex justify-center items-center text-center text-white bg-gray-800 rounded-[20px] p-5">
-                    <h4 className="text-lg font-semibold">Daily Visits : &nbsp;</h4>
-                    <p className="text-2xl font-bold text-red-600">{dailyCount}</p>
-                </div>
+            <div className="flex justify-center items-center text-center text-white bg-gray-800 rounded-[20px] p-5">
+                <h4 className="text-lg font-semibold ">Total Visits : &nbsp;  </h4>
+                <p className=" text-2xl font-bold text-blue-600">{totalCount}</p>
             </div>
+            <div className="flex justify-center items-center text-center text-white bg-gray-800 rounded-[20px] p-5">
+                <h4 className="text-lg font-semibold">Monthly Visits :&nbsp; </h4>
+                <p className="text-2xl font-bold text-purple-600">{monthlyCount}</p>
+            </div>
+            <div className="flex justify-center items-center text-center text-white bg-gray-800 rounded-[20px] p-5">
+                <h4 className="text-lg font-semibold">Weekly Visits : &nbsp; </h4>
+                <p className="text-2xl font-bold text-green-600">{weeklyCount}</p>
+            </div>
+            <div className="flex justify-center items-center text-center text-white bg-gray-800 rounded-[20px] p-5">
+                <h4 className="text-lg font-semibold">Daily Visits : &nbsp;</h4>
+                <p className="text-2xl font-bold text-red-600">{dailyCount}</p>
+            </div>
+            <button
+               onClick = {() => setShowModal(true)}
+                className="flex justify-center items-center text-center text-white bg-gray-800 rounded-[20px] p-5"
+            >
+                Show Details
+            </button>
+        </div>
+
+
+
+        {password == showpassword ? (<div>
             <div className="flex flex-wrap gap-4 justify-center p-4">
 
                 <div className="flex justify-center items-center text-center text-white bg-gray-800 rounded-[20px] p-5">
                     <h4 className="text-lg text-purple-600 font-semibold">Visitor City : {visitCity || 'Loading...'}</h4>
                 </div>
             </div>
-            {cities.length > 1 ? (
+        </div>
+        ) : (
+            <div></div>
+        )}
+        {cities.length > 1 && password == showpassword ? (
 
-                <div>
-                    <div className="flex flex-wrap justify-center gap-8 px-4 py-6">
+            <div>
+                <div className="flex flex-wrap justify-center gap-8 px-4 py-6">
 
-                        <div className="w-full md:w-[48%]">
-                            <PieChart chartData={pieData} />
-                        </div><div className="w-full md:w-[48%]">
-                            <BarChart label={bar2key} dataSet={bar2value} />
-                        </div>
-
+                    <div className="w-full md:w-[48%]">
+                        <PieChart chartData={pieData} />
+                    </div><div className="w-full md:w-[48%]">
+                        <BarChart label={bar2key} dataSet={bar2value} />
                     </div>
-                    <div className="flex flex-wrap justify-center gap-8 px-4 py-6">
-                        <div className="w-full md:w-[48%]">
-                            <BarChart label={pincode} dataSet={pincount} />
-                        </div>
-                        <div className="w-full md:w-[48%]">
-                            <BarChart label={pincodeLast30} dataSet={pincountLast30} />
-                        </div>
+
+                </div>
+                <div className="flex flex-wrap justify-center gap-8 px-4 py-6">
+                    <div className="w-full md:w-[48%]">
+                        <BarChart label={pincode} dataSet={pincount} />
+                    </div>
+                    <div className="w-full md:w-[48%]">
+                        <BarChart label={pincodeLast30} dataSet={pincountLast30} />
                     </div>
                 </div>
+            </div>
 
-            ) : (
-                <div></div>
-            )}
+        ) : (
+            <div></div>
+        )}
 
-            {/* 
+        {/* 
             {showForm ? (
                 <form>
                     <label htmlFor="email">Email:</label>
@@ -359,9 +388,45 @@ const ProfileVisitCounter = () => {
                 <div />
             )} */}
 
-        </>
+        {showModal && (<div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
+            <div className="bg-white rounded-lg p-6 w-96 shadow-lg">
+                <h2 className="text-xl font-semibold mb-4 text-gray-800">
+                    Enter Password
+                </h2>
 
-    );
+                <input
+                    type="password"
+                    placeholder="Enter password"
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
+                    className="w-full border border-gray-300 rounded-lg p-2 mb-4 text-black"
+                />
+
+                <div className="flex justify-end gap-2">
+                    <button
+                        onClick={() => {
+                            setShowModal(false);
+                            setPassword("");
+                        }}
+                        className="px-4 py-2 bg-gray-500 text-white rounded-lg"
+                    >
+                        Cancel
+                    </button>
+
+                    <button
+                        onClick={handleSubmit}
+                        className="px-4 py-2 bg-blue-600 text-white rounded-lg"
+                    >
+                        Submit
+                    </button>
+                </div>
+            </div>
+        </div>
+        )}
+
+    </>
+
+);
 };
 
 export default ProfileVisitCounter;
