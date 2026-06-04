@@ -225,7 +225,7 @@ const experiences = [
   },
   {
     title: "Node JS Developer",
-    company_name: "Senior Develoepr @ Velociter",
+    company_name: "Senior Developer @ Velociter",
     icon: velociter,
     iconBg: "#383E56",
     date: "Jun 2020 - Dec 2023",
