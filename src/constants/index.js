@@ -185,7 +185,7 @@ const experiences = [
     company_name: "System Analyst @ Bitwise",
     icon: bitwise_inc_logo,
     iconBg: "#da2a1b",
-    date: "June 2025 - till date",
+    date: "June 2025 - May-2026",
     points: [
      "Design, develop, and manage API proxies using Apigee Edge and Apigee X.",
      "Identify repetitive manual tasks and automate them using scripting or development tools.",
