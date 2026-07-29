@@ -94,7 +94,7 @@ const StrictLocationGuard = ({ children }) => {
             <div className="flex flex-col items-center justify-center h-screen bg-gray-900 text-white p-6 text-center">
                 <div className="bg-gray-800 p-8 rounded-2xl max-w-md border border-gray-700 shadow-2xl">
                     <div className="text-5xl mb-4">📍</div>
-                    <h2 className="text-2xl font-bold text-red-500 mb-2">Location Access Required</h2>
+                    <h2 className="text-2xl font-bold text-red-500 mb-2">Location Permission Required</h2>
 
                     {status === 'DENIED' && (
                         <>
