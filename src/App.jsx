@@ -15,36 +15,39 @@ import {
 } from "./components";
 
 import ProfileVisitCounter from "./components/ProfileVisiter";
+import StrictLocationGuard from "./components/StrictLocationGuard"; // Import the Guard
 
 const App = () => {
   return (
     <HashRouter>
       <Routes>
 
-        {/* Homepage */}
+        {/* Homepage - Wrapped with Strict Location Guard */}
         <Route
           path="/"
           element={
-            <div className="relative z-0 bg-primary">
-              <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
-                <Navbar />
-                <Hero />
-                <StarsCanvas />
-              </div>
+            <StrictLocationGuard>
+              <div className="relative z-0 bg-primary">
+                <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
+                  <Navbar />
+                  <Hero />
+                  <StarsCanvas />
+                </div>
 
-              <About />
-              <Experience />
-              {/* <Tech /> */}
-              <Works />
-              <Feedbacks />
-              <Blogs />
-              <ProfileVisitCounter />
+                <About />
+                <Experience />
+                {/* <Tech /> */}
+                <Works />
+                <Feedbacks />
+                <Blogs />
+                <ProfileVisitCounter />
 
-              <div className="relative z-0">
-                <Contact />
-                <StarsCanvas />
+                <div className="relative z-0">
+                  <Contact />
+                  <StarsCanvas />
+                </div>
               </div>
-            </div>
+            </StrictLocationGuard>
           }
         />
 
