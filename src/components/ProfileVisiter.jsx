@@ -246,15 +246,15 @@ const ProfileVisitCounter = ({ source = 'direct' }) => {
                 };
 
                 // Prevent duplicate posting per browser session
-                const hasLoggedVisit = sessionStorage.getItem("visit_logged");
-                if (!hasLoggedVisit) {
+                // const hasLoggedVisit = sessionStorage.getItem("visit_logged");
+                // if (!hasLoggedVisit) {
                     try {
                         await addDataToSheet(params);
                         sessionStorage.setItem("visit_logged", "true");
                     } catch (er) {
                         console.error('Error logging visit data:', er.message);
                     }
-                }
+                // }
 
                 // Date ranges & counters
                 const now = new Date();
