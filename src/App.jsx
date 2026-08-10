@@ -17,17 +17,37 @@ import {
 import ProfileVisitCounter from "./components/ProfileVisiter";
 import StrictLocationGuard from "./components/StrictLocationGuard";
 
+// Helper function to extract 'src' or 'source' from anywhere in the URL
+const getReferralSource = (pathSource, locationSearch) => {
+  // 1. Check standard URL query string (e.g. /Portfolio/?src=instagram)
+  const windowQuery = new URLSearchParams(window.location.search);
+  let src = windowQuery.get("src") || windowQuery.get("source");
+
+  // 2. Check React Router location search (e.g. /Portfolio/#/?src=instagram)
+  if (!src && locationSearch) {
+    const routerQuery = new URLSearchParams(locationSearch);
+    src = routerQuery.get("src") || routerQuery.get("source");
+  }
+
+  // 3. Check inside hash string directly as fallback
+  if (!src && window.location.hash.includes("?")) {
+    const hashQuery = new URLSearchParams(window.location.hash.split("?")[1]);
+    src = hashQuery.get("src") || hashQuery.get("source");
+  }
+
+  // Priority: Query string parameter -> Route path param (/:source) -> 'direct'
+  const finalSource = src || pathSource || "direct";
+  
+  return finalSource.toLowerCase().trim();
+};
+
 // Wrapper component to render the main portfolio content
 const PortfolioPage = () => {
-  const { source: pathSource } = useParams(); // Extracts 'linkedin' from /linkedin
+  const { source: pathSource } = useParams(); // Extracts 'linkedin' from /#/linkedin
   const location = useLocation();
 
-  // Extract ?src=instagram or ?source=instagram if Instagram strips path hashes
-  const queryParams = new URLSearchParams(location.search);
-  const querySource = queryParams.get("src") || queryParams.get("source");
-
-  // Priority: 1. Query param (?src=instagram) -> 2. Path param (/:source) -> 3. Fallback ('direct')
-  const finalSource = querySource || pathSource || "direct";
+  // Extract source correctly regardless of HashRouter parameter placement
+  const finalSource = getReferralSource(pathSource, location.search);
 
   return (
     <StrictLocationGuard>
@@ -64,7 +84,7 @@ const App = () => {
         {/* Main Homepage */}
         <Route path="/" element={<PortfolioPage />} />
 
-        {/* Dynamic route for social referral sources (e.g. /#/linkedin, /#/instagram) */}
+        {/* Catch-all route for social referral sources (e.g. /#/linkedin, /#/instagram) */}
         <Route path="/:source" element={<PortfolioPage />} />
 
         {/* Blogs Page */}
