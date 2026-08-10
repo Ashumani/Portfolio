@@ -172,7 +172,7 @@ const ProfileVisitCounter = ({ source = 'direct' }) => {
                         acc['LinkedIn'] = (acc['LinkedIn'] || 0) + 1;
                     } else if (src.includes('instagram')) {
                         acc['Instagram'] = (acc['Instagram'] || 0) + 1;
-                    } else {
+                    } else if (src.includes('direct')) {
                         acc['Direct'] = (acc['Direct'] || 0) + 1;
                     }
                     return acc;
