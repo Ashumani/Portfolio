@@ -7,7 +7,7 @@ import BarChart from './chart/barchart';
 import PieChart from './chart/piechart';
 import moment from "moment";
 
-const ProfileVisitCounter = () => {
+const ProfileVisitCounter = ({ source = 'direct' }) => {
     const [dailyCount, setDailyCount] = useState(0);
     const [weeklyCount, setWeeklyCount] = useState(0);
     const [monthlyCount, setMonthlyCount] = useState(0);
@@ -26,6 +26,9 @@ const ProfileVisitCounter = () => {
     const [showModal, setShowModal] = useState(false);
     const [passwordInput, setPasswordInput] = useState("");
     const [authenticatedPassword, setAuthenticatedPassword] = useState("");
+    const [rawVisitData, setRawVisitData] = useState([])
+    const [sourceKeys, setSourceKeys] = useState([]);
+    const [sourceValues, setSourceValues] = useState([]);
 
     const [pieData, setPieData] = useState({
         labels: [],
@@ -37,130 +40,161 @@ const ProfileVisitCounter = () => {
 
     // Helper: Gets precise location using Browser GPS first, falls back to IP Geolocation
     const getUserLocation = async () => {
-    let locationData = {
-        city: '',
-        state: '',
-        country: '',
-        latitude: 0,
-        longitude: 0,
-        pincode: ''
-    };
-
-    // 1. Get exact GPS coordinates from browser
-    const getGpsPosition = () => {
-        return new Promise((resolve) => {
-            if (!navigator.geolocation) return resolve(null);
-            navigator.geolocation.getCurrentPosition(
-                (pos) => resolve(pos.coords),
-                () => resolve(null),
-                { enableHighAccuracy: true, timeout: 8000, maximumAge: 0 }
-            );
-        });
-    };
-
-    const coords = await getGpsPosition();
-
-    if (coords) {
-        try {
-            // Reverse geocode lat/lon via Nominatim
-            const res = await axios.get(
-                `https://nominatim.openstreetmap.org/reverse?format=json&lat=${coords.latitude}&lon=${coords.longitude}&addressdetails=1`
-            );
-            const addr = res.data.address || {};
-
-            // Fallback chain for Indian location structures in OpenStreetMap
-            const detectedCity = 
-                addr.city || 
-                addr.town || 
-                addr.suburb || 
-                addr.city_district || 
-                addr.neighbourhood || 
-                addr.village || 
-                addr.county || 
-                addr.state_district || 
-                'Unknown';
-
-            let detectedPincode = addr.postcode || '';
-
-            // If Nominatim fails to return a pincode, fallback to BigDataCloud API for reverse pincode
-            if (!detectedPincode) {
-                try {
-                    const bdcRes = await axios.get(
-                        `https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${coords.latitude}&longitude=${coords.longitude}&localityLanguage=en`
-                    );
-                    detectedPincode = bdcRes.data.postcode || '';
-                } catch (e) {
-                    console.warn("Secondary pincode fetch failed");
-                }
-            }
-
-            locationData = {
-                city: detectedCity,
-                state: addr.state || '',
-                country: addr.country || '',
-                latitude: coords.latitude,
-                longitude: coords.longitude,
-                pincode: detectedPincode
-            };
-            
-            return locationData;
-        } catch (err) {
-            console.warn('Reverse geocoding failed, falling back to IP location:', err);
-        }
-    }
-
-    // 2. Fallback to IP-based location if GPS is denied or unavailable
-    try {
-        const ipRes = await axios.get('https://ipapi.co/json/');
-        locationData = {
-            city: ipRes.data.city || '',
-            state: ipRes.data.region || '',
-            country: ipRes.data.country_name || '',
-            latitude: ipRes.data.latitude || 0,
-            longitude: ipRes.data.longitude || 0,
-            pincode: ipRes.data.postal || ''
+        let locationData = {
+            city: '',
+            state: '',
+            country: '',
+            latitude: 0,
+            longitude: 0,
+            pincode: ''
         };
-    } catch (error) {
-        console.error('Error fetching IP location:', error);
-    }
 
-    return locationData;
-};
+        // 1. Get exact GPS coordinates from browser
+        const getGpsPosition = () => {
+            return new Promise((resolve) => {
+                if (!navigator.geolocation) return resolve(null);
+                navigator.geolocation.getCurrentPosition(
+                    (pos) => resolve(pos.coords),
+                    () => resolve(null),
+                    { enableHighAccuracy: true, timeout: 8000, maximumAge: 0 }
+                );
+            });
+        };
+
+        const coords = await getGpsPosition();
+
+        if (coords) {
+            try {
+                // Reverse geocode lat/lon via Nominatim
+                const res = await axios.get(
+                    `https://nominatim.openstreetmap.org/reverse?format=json&lat=${coords.latitude}&lon=${coords.longitude}&addressdetails=1`
+                );
+                const addr = res.data.address || {};
+
+                // Fallback chain for Indian location structures in OpenStreetMap
+                const detectedCity =
+                    addr.city ||
+                    addr.town ||
+                    addr.suburb ||
+                    addr.city_district ||
+                    addr.neighbourhood ||
+                    addr.village ||
+                    addr.county ||
+                    addr.state_district ||
+                    'Unknown';
+
+                let detectedPincode = addr.postcode || '';
+
+                // If Nominatim fails to return a pincode, fallback to BigDataCloud API for reverse pincode
+                if (!detectedPincode) {
+                    try {
+                        const bdcRes = await axios.get(
+                            `https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${coords.latitude}&longitude=${coords.longitude}&localityLanguage=en`
+                        );
+                        detectedPincode = bdcRes.data.postcode || '';
+                    } catch (e) {
+                        console.warn("Secondary pincode fetch failed");
+                    }
+                }
+
+                locationData = {
+                    city: detectedCity,
+                    state: addr.state || '',
+                    country: addr.country || '',
+                    latitude: coords.latitude,
+                    longitude: coords.longitude,
+                    pincode: detectedPincode
+                };
+
+                return locationData;
+            } catch (err) {
+                console.warn('Reverse geocoding failed, falling back to IP location:', err);
+            }
+        }
+
+        // 2. Fallback to IP-based location if GPS is denied or unavailable
+        try {
+            const ipRes = await axios.get('https://ipapi.co/json/');
+            locationData = {
+                city: ipRes.data.city || '',
+                state: ipRes.data.region || '',
+                country: ipRes.data.country_name || '',
+                latitude: ipRes.data.latitude || 0,
+                longitude: ipRes.data.longitude || 0,
+                pincode: ipRes.data.postal || ''
+            };
+        } catch (error) {
+            console.error('Error fetching IP location:', error);
+        }
+
+        return locationData;
+    };
     useEffect(() => {
-        const now = new Date();
-
+        // 1. Fetch historical visit analytics
         fetch(WEB_APP_URL_GT)
             .then((response) => response.json())
             .then(async (visitData) => {
-                const maxId = visitData.length > 0 
-                    ? Math.max(...visitData.map(item => parseInt(item.id, 10) || 0)) 
+                const safeData = Array.isArray(visitData) ? visitData : [];
+
+                // Save raw data to state so BarChartSource component can use it
+                if (typeof setRawVisitData === 'function') {
+                    setRawVisitData(safeData);
+                }
+
+                // Group and count visits by traffic source
+                const sourceCountMap = safeData.reduce((acc, curr) => {
+                    const src = (curr.source || 'direct').toLowerCase().trim();
+
+                    if (src.includes('linkedin')) {
+                        acc['LinkedIn'] = (acc['LinkedIn'] || 0) + 1;
+                    } else if (src.includes('instagram')) {
+                        acc['Instagram'] = (acc['Instagram'] || 0) + 1;
+                    } else {
+                        acc['Direct'] = (acc['Direct'] || 0) + 1;
+                    }
+                    return acc;
+                }, { Instagram: 0, LinkedIn: 0, Direct: 0 });
+
+                // Update source state variables
+                setSourceKeys(Object.keys(sourceCountMap));   // ['Instagram', 'LinkedIn', 'Direct']
+                setSourceValues(Object.values(sourceCountMap)); // [15, 25, 40]
+                // Calculate Max ID safely
+                const maxId = safeData.length > 0
+                    ? Math.max(...safeData.map(item => parseInt(item.id, 10) || 0))
                     : 0;
 
-                const uniqueCities = [...new Set(visitData.map(item => item.city).filter(Boolean))].join(", ");
+                const uniqueCities = [...new Set(safeData.map(item => item.city).filter(Boolean))].join(", ");
 
-                const cityCount = visitData.reduce((acc, curr) => {
+                // Group city counts
+                const cityCount = safeData.reduce((acc, curr) => {
                     const city = curr.city || 'Unknown';
                     acc[city] = (acc[city] || 0) + 1;
                     return acc;
                 }, {});
 
-                // Calculate Cutoff Date (30 days ago)
-                const thirtyDaysAgoTime = new Date().setDate(now.getDate() - 30);
+                // Calculate 30-day cutoff date
+                const thirtyDaysAgo = new Date();
+                thirtyDaysAgo.setDate(thirtyDaysAgo.getDate() - 30);
+                const thirtyDaysAgoTime = thirtyDaysAgo.getTime();
 
-                const recentVisits = visitData.filter(visit => {
+                // Filter visits from the last 30 days
+                const recentVisits = safeData.filter(visit => {
                     const visitTime = new Date(visit.date).getTime();
                     return visitTime >= thirtyDaysAgoTime;
                 });
 
+                // Group pincodes for the last 30 days
                 const pinCountLast30Map = recentVisits.reduce((acc, curr) => {
                     const pincodeVal = curr.postal || 'N/A';
                     const cityVal = curr.city || 'Unknown';
-                    const key = `${pincodeVal} - ${cityVal} - ${moment(curr.date).format("DD-MM-YYYY")}`;
+                    const dateVal = curr.date ? moment(curr.date).format("DD-MM-YYYY") : '';
+                    const key = `${pincodeVal} - ${cityVal} - ${dateVal}`;
                     acc[key] = (acc[key] || 0) + 1;
                     return acc;
                 }, {});
 
-                const pinCountMap = visitData.reduce((acc, curr) => {
+                // Group all-time pincodes
+                const pinCountMap = safeData.reduce((acc, curr) => {
                     const pincodeVal = curr.postal || 'N/A';
                     const cityVal = curr.city || 'Unknown';
                     const key = `${pincodeVal} - ${cityVal}`;
@@ -168,7 +202,7 @@ const ProfileVisitCounter = () => {
                     return acc;
                 }, {});
 
-                // FIX: Setting Keys and Values to their respective distinct state setters
+                // FIXED: Keys go to setPinCodeLast30, Values go to setPinCountLast30
                 setPinCodeLast30(Object.keys(pinCountLast30Map));
                 setPinCountLast30(Object.values(pinCountLast30Map));
 
@@ -177,10 +211,11 @@ const ProfileVisitCounter = () => {
 
                 setCities(Object.keys(cityCount));
 
-                // Fetch high-accuracy location
+                // Fetch user location and browser specs
                 const loc = await getUserLocation();
                 const browserInfo = getBrowserDetails();
 
+                // Construct visit log payload
                 const params = {
                     id: maxId + 1,
                     date: new Date().toISOString(),
@@ -191,23 +226,37 @@ const ProfileVisitCounter = () => {
                     state: loc.state,
                     country: loc.country,
                     currentPage: window.location.pathname,
+                    source: source || 'direct', // Logs 'linkedin', 'instagram', or 'direct'
                     userAgent: browserInfo.userAgent
                 };
 
-                try {
-                    await addDataToSheet(params);
-                } catch (er) {
-                    console.log('Error adding data to sheet:', er.message);
+                // Post visit payload to Apps Script (prevent duplicate logs per tab session)
+                const hasLoggedVisit = sessionStorage.getItem("visit_logged");
+                if (!hasLoggedVisit) {
+                    try {
+                        await addDataToSheet(params);
+                        sessionStorage.setItem("visit_logged", "true");
+                    } catch (er) {
+                        console.error('Error logging visit data:', er.message);
+                    }
                 }
 
-                const oneDayAgo = new Date(now).setDate(now.getDate() - 1);
-                const oneWeekAgo = new Date(now).setDate(now.getDate() - 7);
-                const oneMonthAgo = new Date(now).setMonth(now.getMonth() - 1);
+                // Calculate date ranges for counters
+                const now = new Date();
 
-                const daily = visitData.filter(item => new Date(item.date).getTime() > oneDayAgo).length;
-                const weekly = visitData.filter(item => new Date(item.date).getTime() > oneWeekAgo).length;
-                const monthly = visitData.filter(item => new Date(item.date).getTime() > oneMonthAgo).length;
-                const total = visitData.length;
+                const oneDayAgo = new Date(now);
+                oneDayAgo.setDate(now.getDate() - 1);
+
+                const oneWeekAgo = new Date(now);
+                oneWeekAgo.setDate(now.getDate() - 7);
+
+                const oneMonthAgo = new Date(now);
+                oneMonthAgo.setMonth(now.getMonth() - 1);
+
+                const daily = safeData.filter(item => new Date(item.date) > oneDayAgo).length;
+                const weekly = safeData.filter(item => new Date(item.date) > oneWeekAgo).length;
+                const monthly = safeData.filter(item => new Date(item.date) > oneMonthAgo).length;
+                const total = safeData.length;
 
                 setBar2key(["Total", "Monthly", "Weekly", "Daily"]);
                 setBar2Value([total, monthly, weekly, daily]);
@@ -243,8 +292,7 @@ const ProfileVisitCounter = () => {
                 });
             })
             .catch(err => console.error("Error loading visit data:", err));
-    }, []);
-
+    }, [source]);
     const handleSubmit = () => {
         setAuthenticatedPassword(passwordInput);
         setShowModal(false);
@@ -344,6 +392,14 @@ const ProfileVisitCounter = () => {
                         <div className="w-full md:w-[48%]">
                             <BarChart label={pincodeLast30} dataSet={pincountLast30} />
                         </div>
+                    </div>
+                    <div className="w-full flex flex-col items-center justify-center gap-6 py-8">
+                        {/* 1. Traffic Source Chart */}
+                        <div className="w-full md:w-[48%]">
+    <BarChart label={sourceKeys} dataSet={sourceValues} />
+</div>
+
+                        {/* ... your other charts (City Pie Chart, Daily Bar Chart, Counters) ... */}
                     </div>
                 </div>
             )}
