@@ -1,4 +1,4 @@
-import { HashRouter, Routes, Route, Navigate, useParams } from "react-router-dom";
+import { HashRouter, Routes, Route, Navigate, useParams, useLocation } from "react-router-dom";
 
 import BlogsPage from "./pages/Blogs";
 import {
@@ -19,7 +19,15 @@ import StrictLocationGuard from "./components/StrictLocationGuard";
 
 // Wrapper component to render the main portfolio content
 const PortfolioPage = () => {
-  const { source } = useParams(); // Extracts 'linkedin', 'instagram', etc.
+  const { source: pathSource } = useParams(); // Extracts 'linkedin' from /linkedin
+  const location = useLocation();
+
+  // Extract ?src=instagram or ?source=instagram if Instagram strips path hashes
+  const queryParams = new URLSearchParams(location.search);
+  const querySource = queryParams.get("src") || queryParams.get("source");
+
+  // Priority: 1. Query param (?src=instagram) -> 2. Path param (/:source) -> 3. Fallback ('direct')
+  const finalSource = querySource || pathSource || "direct";
 
   return (
     <StrictLocationGuard>
@@ -37,8 +45,8 @@ const PortfolioPage = () => {
         <Feedbacks />
         <Blogs />
 
-        {/* Pass referral source down to visitor analytics component */}
-        <ProfileVisitCounter source={source || 'direct'} />
+        {/* Pass normalized referral source down to visitor analytics */}
+        <ProfileVisitCounter source={finalSource} />
 
         <div className="relative z-0">
           <Contact />
@@ -56,7 +64,7 @@ const App = () => {
         {/* Main Homepage */}
         <Route path="/" element={<PortfolioPage />} />
 
-        {/* Catch-all route for social referral sources (e.g. /linkedin, /instagram) */}
+        {/* Dynamic route for social referral sources (e.g. /#/linkedin, /#/instagram) */}
         <Route path="/:source" element={<PortfolioPage />} />
 
         {/* Blogs Page */}
