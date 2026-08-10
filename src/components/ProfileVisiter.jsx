@@ -172,11 +172,17 @@ const ProfileVisitCounter = ({ source = 'direct' }) => {
                         acc['LinkedIn'] = (acc['LinkedIn'] || 0) + 1;
                     } else if (src.includes('instagram')) {
                         acc['Instagram'] = (acc['Instagram'] || 0) + 1;
+                    } else if (src.includes('facebook')) {
+                        acc['Facebook'] = (acc['Facebook'] || 0) + 1;
+                    } else if (src.includes('biodata')) {
+                        acc['Bio'] = (acc['Bio'] || 0) + 1;
+                    }else if (src.includes('naukri')) {
+                        acc['Naukri'] = (acc['Naukri'] || 0) + 1;
                     } else if (src.includes('direct')) {
                         acc['Direct'] = (acc['Direct'] || 0) + 1;
                     }
                     return acc;
-                }, { Instagram: 0, LinkedIn: 0, Direct: 0 });
+                }, { Instagram: 0, LinkedIn: 0, Facebook: 0, Naukri: 0, Bio: 0, Direct: 0 });
 
                 setSourceKeys(Object.keys(sourceCountMap));
                 setSourceValues(Object.values(sourceCountMap));
